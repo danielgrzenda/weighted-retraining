@@ -20,9 +20,18 @@ python -m pip install -e .
 
 model_dir="results/models/unweighted"
 mkdir -p "$model_dir"
-cd weighted_retraining
 
-# Takes about 20min to train
-# Final model is in "logs/train/shapes/lightning_logs/version_0/last.ckpt"`
-python train_scripts/train_shapes.py --root_dir="$model_dir" --latent_dim=12 --dataset_path=../data/shapes/squares_G64_S1-20_seed0_R10_mnc32_mxc33.npz --property_key="areas"
+gpu="--gpu"  # change to "" if no GPU is to be used
+seed=0
 
+python weighted_retraining/train_scripts/train_shapes.py \
+    --root_dir="$model_dir/shapes" \
+    --seed="$seed" \
+    $gpu \
+    --latent_dim=2 \
+    --dataset_path=data/shapes/squares_G64_S1-20_seed0_R10_mnc32_mxc33.npz \
+    --property_key=areas \
+    --max_epochs=20 \
+    --beta_final=10.0 --beta_start=1e-6 \
+    --beta_warmup=1000 --beta_step=1.1 --beta_step_freq=10 \
+    --batch_size=16
