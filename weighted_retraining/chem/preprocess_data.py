@@ -10,6 +10,17 @@ from tqdm.auto import tqdm
 from weighted_retraining.chem.chem_utils import rdkit_quiet
 from weighted_retraining.chem.chem_data import tensorize
 
+def save_data(all_data, start, end, num_per_file, save_dir):
+    # For easiness, pad all data at the start so the indices
+    # of data and all_data are the same
+    all_data = [None] * start + all_data
+    assert all_data[start] is not None
+
+    # Save to appropriate files
+    for i in range(start, end, num_per_file):
+        file_name = f"tensors_{i:010d}-{i+num_per_file:010d}.pkl"
+        with open(Path(save_dir) / file_name, "wb") as f:
+            pickle.dump(all_data[i:i+num_per_file], f)
 
 if __name__ == "__main__":
     rdkit_quiet()
@@ -21,7 +32,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-e", "--end", type=int, default=None, help="ending index, default is last one"
     )
-    parser.add_argument("-n", "--num_per_file", type=int, default=50000)
+    parser.add_argument("-n", "--num_per_file", type=int, default=1000)
     parser.add_argument("-d", "--save_dir", type=str, required=True)
     args = parser.parse_args()
 
@@ -41,19 +52,18 @@ if __name__ == "__main__":
 
     # Process all data in the regime start-end
     print("Processing data!!!")
-    all_data = [
-        tensorize(s)
-        for s in tqdm(data[args.start : args.end], smoothing=0, dynamic_ncols=True)
-    ]
+    all_data = []
+    last_save = args.start
+    for i, s in enumerate(tqdm(data[args.start : args.end], smoothing=0, dynamic_ncols=True)):
+        all_data.append(tensorize(s))
+        if i % 1000 == 0:
+            print(f"saving files from {last_save} to {args.start + i}")
+            save_data(all_data, last_save, args.start+i, args.num_per_file, args.save_dir)
+            last_save = args.start + i
 
-    # For easiness, pad all data at the start so the indices
-    # of data and all_data are the same
-    all_data = [None] * args.start + all_data
-    assert all_data[args.start] is not None
+    
+    print(f"saving files from {last_save} to {args.start + len(all_data)}")
+    save_data(all_data, last_save, last_save+len(all_data), args.num_per_file, args.save_dir)
+    last_save = args.start + len(all_data)
 
-    # Save to appropriate files
-    for i in range(args.start, args.end, args.num_per_file):
-        end_idx = min(i + args.num_per_file, len(all_data))
-        file_name = f"tensors_{i:010d}-{end_idx:010d}.pkl"
-        with open(Path(args.save_dir) / file_name, "wb") as f:
-            pickle.dump(all_data[i:end_idx], f)
+    print(last_save)

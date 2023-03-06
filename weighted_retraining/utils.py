@@ -14,7 +14,6 @@ from pathlib import Path
 import torch
 import pytorch_lightning as pl
 
-
 # Weighting functions
 class DataWeighter:
     weight_types = ["uniform", "rank", "dbas", "fb", "rwr", "cem-pi"]

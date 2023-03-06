@@ -23,6 +23,9 @@ def add_common_args(parser: ArgumentParser):
     opt_group.add_argument("--n_init_retrain_epochs", type=float, default=None, help="None to use n_retrain_epochs, 0.0 to skip init retrain")
     opt_group.add_argument("--lso_strategy", type=str, choices=["opt", "sample"], required=True)
 
+    opt_group.add_argument("--scheduler", type=str, choices=[ "cawr", "cyclic", "onecycle", "step" ], default="step")
+    opt_group.add_argument("--adaptive_k", type=float, default=100 )
+
     return parser
 
 

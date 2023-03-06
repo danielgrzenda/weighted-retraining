@@ -1,3 +1,6 @@
+#
+results
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -125,6 +128,6 @@ venv.bak/
 .vscode
 
 # seed project
-lightning_logs/
+#lightning_logs/
 MNIST
 .DS_Store

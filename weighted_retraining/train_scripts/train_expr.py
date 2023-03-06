@@ -6,6 +6,7 @@ import argparse
 import itertools
 import numpy as np
 from pathlib import Path
+import sys
 import tensorflow as tf
 
 from keras.callbacks import ModelCheckpoint, ReduceLROnPlateau
@@ -14,7 +15,7 @@ from weighted_retraining.expr.expr_model import EquationVAE
 from weighted_retraining.expr.equation_vae import EquationGrammarModel
 from weighted_retraining.expr.expr_data import load_data_str, load_data_enc, score_function
 from weighted_retraining.utils import print_flush, DataWeighter
-
+from weighted_retraining import utils
 
 def main():
     """ Train model from scratch """
@@ -23,22 +24,29 @@ def main():
     parser = argparse.ArgumentParser()
     parser = DataWeighter.add_weight_args(parser)
     parser.add_argument(
+        "--seed",
+        type=int,
+        default=0,
+        help="seed value"
+    )
+    parser.add_argument("--gpu", action="store_true")
+    parser.add_argument(
         "--latent_dim",
         type=int,
         default=25,
-        help="dimensionality of latent space",
+        help="dimensionality of latent space"
     )
     parser.add_argument(
         "--data_dir",
         type=str,
-        default="assets/data/expr"
-        help="directory of datasets",
+        default="assets/data/expr",
+        help="directory of datasets"
     )
     parser.add_argument(
         "--root_dir",
         type=str,
         required=True,
-        help="directory of model",
+        help="directory of model"
     )
     parser.add_argument(
         "--n_epochs",
@@ -56,11 +64,11 @@ def main():
         default=50,
         help="percentile of scores to ignore"
     )
-    weight_group.add_argument(
+    parser.add_argument(
         "--k",
         type=str,
         default="inf",
-        help="k parameter for rank weighting",
+        help="k parameter for rank weighting"
     )
     args = parser.parse_args()
     args.weight_type = "rank"

@@ -8,6 +8,7 @@ import argparse
 from pathlib import Path
 import numpy as np
 import torch
+import functools
 import pytorch_lightning as pl
 
 # My imports
@@ -15,6 +16,7 @@ from weighted_retraining.shapes.shapes_data import WeightedNumpyDataset
 from weighted_retraining.shapes.shapes_model import ShapesVAE
 from weighted_retraining import utils
 from weighted_retraining.opt_scripts import base as wr_base
+from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts, CyclicLR, OneCycleLR, StepLR
 
 
 def retrain_model(model, datamodule, save_dir, version_str, num_epochs, gpu):
@@ -131,6 +133,8 @@ def main_loop(args):
 
     # Load data
     datamodule = WeightedNumpyDataset(args, utils.DataWeighter(args))
+        
+    # this using the datamodule.weighting_function to set_weights of the training data
     datamodule.setup("fit")
 
     # Load model
@@ -159,6 +163,45 @@ def main_loop(args):
 
     # Set up some stuff for the progress bar
     num_retrain = int(np.ceil(args.query_budget / args.retraining_frequency))
+    
+    fake_model = torch.nn.Linear(2, 1)
+    fake_optimizer = torch.optim.SGD(fake_model.parameters(), args.adaptive_k)
+    
+    #weight_noise_schedule = [ "cawr", "cyclic", "onecycle", "step" ]
+    if args.scheduler == 'cawr':
+        scheduler = CosineAnnealingWarmRestarts(fake_optimizer, 
+                        T_0 = 10,# Number of iterations for the first restart
+                        T_mult = 1, # A factor increases TiTi​ after a restart
+                        eta_min = 0.001) # Minimum learning rate
+    
+    if args.scheduler == 'cyclic':
+        scheduler = CyclicLR(fake_optimizer, 
+                        base_lr = 0.001, # Initial learning rate which is the lower boundary in the cycle for each parameter group
+                        max_lr = 100, # Upper learning rate boundaries in the cycle for each parameter group
+                        step_size_up = 5, # Number of training iterations in the increasing half of a cycle
+                        mode = "triangular")
+    
+    if args.scheduler == "onecycle":
+        scheduler = OneCycleLR(fake_optimizer, 
+                        max_lr = 100, # Upper learning rate boundaries in the cycle for each parameter group
+                        steps_per_epoch = 1, # The number of steps per epoch to train for.
+                        epochs = num_retrain, # The number of epochs to train for.
+                        anneal_strategy = 'cos') # Specifies the annealing strategy
+    
+    if args.scheduler == "step":
+        scheduler = StepLR(fake_optimizer, 
+                       step_size = 5, # Period of learning rate decay
+                       gamma = 0.5) # Multiplicative factor of learning rate decay
+    
+    levels_of_k = []
+    for i in range(num_retrain):
+        fake_optimizer.step()
+        levels_of_k.append( round (fake_optimizer.param_groups[0]["lr"],6 ) )
+        scheduler.step()
+        
+    print(levels_of_k)
+            
+    
     postfix = dict(
         retrain_left=num_retrain, best=-float("inf"), n_train=len(datamodule.data_train)
     )
@@ -228,6 +271,12 @@ def main_loop(args):
             else:
                 raise NotImplementedError(args.lso_strategy)
 
+            # FIXME this is where the reweighting gets done, so we need to take the step here
+            datamodule.weighting_function = functools.partial(
+                utils.DataWeighter.rank_weights, k_val=levels_of_k[ret_idx]
+            )
+            print(levels_of_k[ret_idx])
+            
             # Append new points to dataset
             datamodule.append_train_data(x_new, y_new)
 
