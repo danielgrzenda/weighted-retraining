@@ -165,8 +165,11 @@ def main_loop(args):
     num_retrain = int(np.ceil(args.query_budget / args.retraining_frequency))
     
     fake_model = torch.nn.Linear(2, 1)
-    fake_optimizer = torch.optim.SGD(fake_model.parameters(), args.adaptive_k)
+    fake_optimizer = torch.optim.SGD(fake_model.parameters(), args.rank_weight_k)
     
+    
+    levels_of_k = []
+
     #weight_noise_schedule = [ "cawr", "cyclic", "onecycle", "step" ]
     if args.scheduler == 'cawr':
         scheduler = CosineAnnealingWarmRestarts(fake_optimizer, 
@@ -192,16 +195,22 @@ def main_loop(args):
         scheduler = StepLR(fake_optimizer, 
                        step_size = 5, # Period of learning rate decay
                        gamma = 0.5) # Multiplicative factor of learning rate decay
+
+    if args.scheduler == "None":
+        scheduler = StepLR(fake_optimizer, 
+                    step_size = 5, # Period of learning rate decay
+                    gamma = 0.5) # Mu
     
-    levels_of_k = []
     for i in range(num_retrain):
         fake_optimizer.step()
         levels_of_k.append( round (fake_optimizer.param_groups[0]["lr"],6 ) )
         scheduler.step()
+    
+    if args.scheduler == "None":
+        levels_of_k = [args.rank_weight_k]
         
     print(levels_of_k)
             
-    
     postfix = dict(
         retrain_left=num_retrain, best=-float("inf"), n_train=len(datamodule.data_train)
     )
