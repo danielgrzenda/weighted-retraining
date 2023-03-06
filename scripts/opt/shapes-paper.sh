@@ -1,6 +1,6 @@
 # Meta flags
 gpu="--gpu"  # change to "" if no GPU is to be used
-seed_array=(14) #( 1 2 3 4 5 )
+seed_array=(15) #( 1 2 3 4 5 )
 root_dir="logs/opt/shapes"
 start_model="assets/pretrained_models/shapes.ckpt"
 query_budget=500
