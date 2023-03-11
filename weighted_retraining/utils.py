@@ -86,6 +86,7 @@ class DataWeighter:
         if np.isinf(k_val):
             return np.ones_like(properties)
         ranks = np.argsort(np.argsort(-1 * properties))
+        #print(k_val, len(properties), ranks)
         weights = 1.0 / (k_val * len(properties) + ranks)
         return weights
 

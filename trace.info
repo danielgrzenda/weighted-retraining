@@ -1,0 +1,1081 @@
+23:18:31.778498 execve("./scripts/opt/adaptive_experiments.py", ["./scripts/opt/adaptive_experimen"...], 0x7ffde3320008 /* 48 vars */) = 0 <0.001269>
+23:18:31.780150 brk(NULL)               = 0x5582fcaab000 <0.000024>
+23:18:31.780390 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe143bc360) = -1 EINVAL (Invalid argument) <0.000018>
+23:18:31.780598 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000023>
+23:18:31.780925 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+23:18:31.781005 fstat(3, {st_mode=S_IFREG|0644, st_size=195424, ...}) = 0 <0.000020>
+23:18:31.781075 mmap(NULL, 195424, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff716068000 <0.000021>
+23:18:31.781353 close(3)                = 0 <0.000017>
+23:18:31.781430 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000057>
+23:18:31.781572 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832 <0.000019>
+23:18:31.781862 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000022>
+23:18:31.781994 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32 <0.000020>
+23:18:31.782288 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68 <0.000025>
+23:18:31.782363 fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0 <0.000017>
+23:18:31.782424 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff716066000 <0.000020>
+23:18:31.782673 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000018>
+23:18:31.782749 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32 <0.000017>
+23:18:31.782813 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68 <0.000016>
+23:18:31.783075 mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff715e74000 <0.000023>
+23:18:31.783145 mmap(0x7ff715e96000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7ff715e96000 <0.000032>
+23:18:31.783222 mmap(0x7ff71600e000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7ff71600e000 <0.000023>
+23:18:31.783284 mmap(0x7ff71605c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7ff71605c000 <0.000024>
+23:18:31.783653 mmap(0x7ff716062000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff716062000 <0.000022>
+23:18:31.783733 close(3)                = 0 <0.000017>
+23:18:31.783815 arch_prctl(ARCH_SET_FS, 0x7ff716067580) = 0 <0.000017>
+23:18:31.784150 mprotect(0x7ff71605c000, 16384, PROT_READ) = 0 <0.000117>
+23:18:31.784571 mprotect(0x5582fc02e000, 4096, PROT_READ) = 0 <0.000046>
+23:18:31.784738 mprotect(0x7ff7160c5000, 4096, PROT_READ) = 0 <0.000023>
+23:18:31.785022 munmap(0x7ff716068000, 195424) = 0 <0.000106>
+23:18:31.785512 brk(NULL)               = 0x5582fcaab000 <0.000018>
+23:18:31.785842 brk(0x5582fcacc000)     = 0x5582fcacc000 <0.000053>
+23:18:31.786262 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3 <0.000072>
+23:18:31.786692 fstat(3, {st_mode=S_IFREG|0644, st_size=5699248, ...}) = 0 <0.000038>
+23:18:31.786858 mmap(NULL, 5699248, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff715904000 <0.000062>
+23:18:31.787131 close(3)                = 0 <0.000081>
+23:18:31.787536 execve("/home/grzenda/.vscode-server/bin/92da9481c0904c6adfe372c12da3b7748d74bdcb/bin/remote-cli/python3", ["python3", "./scripts/opt/adaptive_experimen"...], 0x7ffe143bc458 /* 48 vars */) = -1 ENOENT (No such file or directory) <0.000096>
+23:18:31.787890 execve("/home/grzenda/.conda/envs/weighted-retraining/bin/python3", ["python3", "./scripts/opt/adaptive_experimen"...], 0x7ffe143bc458 /* 48 vars */) = 0 <0.001179>
+23:18:31.789234 brk(NULL)               = 0x20d6000 <0.000043>
+23:18:31.789519 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffefa044d00) = -1 EINVAL (Invalid argument) <0.000044>
+23:18:31.789912 readlink("/proc/self/exe", "/home/grzenda/.conda/envs/weight"..., 4096) = 59 <0.000064>
+23:18:31.790308 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f230eb000 <0.000042>
+23:18:31.790488 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000073>
+23:18:31.790846 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/avx512_1/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000196>
+23:18:31.791458 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/avx512_1/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.791539 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/avx512_1/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000026>
+23:18:31.791617 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/avx512_1", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000023>
+23:18:31.791926 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000029>
+23:18:31.792038 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000022>
+23:18:31.792341 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000109>
+23:18:31.792764 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/haswell", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000079>
+23:18:31.793125 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/avx512_1/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000096>
+23:18:31.793534 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/avx512_1/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000176>
+23:18:31.793941 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/avx512_1/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000109>
+23:18:31.794321 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/avx512_1", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000044>
+23:18:31.794452 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000048>
+23:18:31.794915 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000021>
+23:18:31.795183 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000044>
+23:18:31.795509 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/tls", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000111>
+23:18:31.795885 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/avx512_1/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000045>
+23:18:31.796021 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/avx512_1/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000042>
+23:18:31.796330 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/avx512_1/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000044>
+23:18:31.796680 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/avx512_1", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000040>
+23:18:31.796964 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000103>
+23:18:31.797265 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000035>
+23:18:31.797430 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000024>
+23:18:31.797766 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/haswell", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.798064 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/avx512_1/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000079>
+23:18:31.798397 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/avx512_1/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000051>
+23:18:31.798534 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/avx512_1/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.798763 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/avx512_1", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000096>
+23:18:31.799097 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000051>
+23:18:31.799233 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/x86_64", 0x7ffefa043f50) = -1 ENOENT (No such file or directory) <0.000024>
+23:18:31.799554 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000049>
+23:18:31.799846 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/../lib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=1294, ...}) = 0 <0.000026>
+23:18:31.800137 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000041>
+23:18:31.800267 fstat(3, {st_mode=S_IFREG|0644, st_size=195424, ...}) = 0 <0.000017>
+23:18:31.800539 mmap(NULL, 195424, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6f230bb000 <0.000048>
+23:18:31.800843 close(3)                = 0 <0.000035>
+23:18:31.801014 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000065>
+23:18:31.801225 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832 <0.000083>
+23:18:31.801540 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0{E6\364\34\332\245\210\204\10\350-\0106\343="..., 68, 824) = 68 <0.000042>
+23:18:31.801669 fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0 <0.000035>
+23:18:31.802141 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0{E6\364\34\332\245\210\204\10\350-\0106\343="..., 68, 824) = 68 <0.000033>
+23:18:31.802460 mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f23098000 <0.000021>
+23:18:31.802702 mmap(0x7f6f2309e000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f6f2309e000 <0.000053>
+23:18:31.802990 mmap(0x7f6f230af000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f6f230af000 <0.000056>
+23:18:31.803126 mmap(0x7f6f230b5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7f6f230b5000 <0.000025>
+23:18:31.803410 mmap(0x7f6f230b7000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6f230b7000 <0.000046>
+23:18:31.803741 close(3)                = 0 <0.000042>
+23:18:31.803870 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000169>
+23:18:31.804608 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+23:18:31.804893 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \22\0\0\0\0\0\0"..., 832) = 832 <0.000037>
+23:18:31.805042 fstat(3, {st_mode=S_IFREG|0644, st_size=18848, ...}) = 0 <0.000019>
+23:18:31.805299 mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f23092000 <0.000046>
+23:18:31.805605 mmap(0x7f6f23093000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f6f23093000 <0.000053>
+23:18:31.805741 mmap(0x7f6f23095000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6f23095000 <0.000162>
+23:18:31.806474 mmap(0x7f6f23096000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6f23096000 <0.000024>
+23:18:31.806755 close(3)                = 0 <0.000102>
+23:18:31.807110 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000103>
+23:18:31.807467 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3 <0.000049>
+23:18:31.807601 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\23\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+23:18:31.807926 fstat(3, {st_mode=S_IFREG|0644, st_size=14880, ...}) = 0 <0.000036>
+23:18:31.808224 mmap(NULL, 16656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f2308d000 <0.000039>
+23:18:31.808506 mmap(0x7f6f2308e000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f6f2308e000 <0.000026>
+23:18:31.808796 mmap(0x7f6f2308f000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6f2308f000 <0.000042>
+23:18:31.808948 mmap(0x7f6f23090000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6f23090000 <0.000022>
+23:18:31.809226 close(3)                = 0 <0.000084>
+23:18:31.809541 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000050>
+23:18:31.809689 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+23:18:31.809961 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\323\0\0\0\0\0\0"..., 832) = 832 <0.000020>
+23:18:31.810259 fstat(3, {st_mode=S_IFREG|0644, st_size=1369384, ...}) = 0 <0.000046>
+23:18:31.810395 mmap(NULL, 1368336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f22f3e000 <0.000041>
+23:18:31.810839 mmap(0x7f6f22f4b000, 684032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f6f22f4b000 <0.000105>
+23:18:31.811369 mmap(0x7f6f22ff2000, 626688, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb4000) = 0x7f6f22ff2000 <0.000053>
+23:18:31.811502 mmap(0x7f6f2308b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14c000) = 0x7f6f2308b000 <0.000022>
+23:18:31.811774 close(3)                = 0 <0.000018>
+23:18:31.812044 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/../lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000059>
+23:18:31.812196 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000043>
+23:18:31.812463 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832 <0.000022>
+23:18:31.812778 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000030>
+23:18:31.812928 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32 <0.000016>
+23:18:31.813194 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68 <0.000096>
+23:18:31.813586 fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0 <0.000088>
+23:18:31.813842 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000017>
+23:18:31.814066 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32 <0.000019>
+23:18:31.814374 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68 <0.000036>
+23:18:31.814522 mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f22d4c000 <0.000024>
+23:18:31.814783 mmap(0x7f6f22d6e000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f6f22d6e000 <0.000050>
+23:18:31.815127 mmap(0x7f6f22ee6000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7f6f22ee6000 <0.000086>
+23:18:31.815543 mmap(0x7f6f22f34000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f6f22f34000 <0.000108>
+23:18:31.815888 mmap(0x7f6f22f3a000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6f22f3a000 <0.000097>
+23:18:31.816240 close(3)                = 0 <0.000034>
+23:18:31.816422 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f22d4a000 <0.000067>
+23:18:31.816703 arch_prctl(ARCH_SET_FS, 0x7f6f22d4b280) = 0 <0.000043>
+23:18:31.816890 mprotect(0x7f6f22f34000, 16384, PROT_READ) = 0 <0.000080>
+23:18:31.817177 mprotect(0x7f6f2308b000, 4096, PROT_READ) = 0 <0.000104>
+23:18:31.817502 mprotect(0x7f6f23090000, 4096, PROT_READ) = 0 <0.000050>
+23:18:31.817636 mprotect(0x7f6f23096000, 4096, PROT_READ) = 0 <0.000022>
+23:18:31.817881 mprotect(0x7f6f230b5000, 4096, PROT_READ) = 0 <0.000046>
+23:18:31.818320 mprotect(0x688000, 4096, PROT_READ) = 0 <0.000050>
+23:18:31.818647 mprotect(0x7f6f2311a000, 4096, PROT_READ) = 0 <0.000066>
+23:18:31.818923 munmap(0x7f6f230bb000, 195424) = 0 <0.000106>
+23:18:31.819259 set_tid_address(0x7f6f22d4b550) = 3524796 <0.000033>
+23:18:31.819407 set_robust_list(0x7f6f22d4b560, 24) = 0 <0.000063>
+23:18:31.819653 rt_sigaction(SIGRTMIN, {sa_handler=0x7f6f2309ebf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f6f230ac420}, NULL, 8) = 0 <0.000042>
+23:18:31.819968 rt_sigaction(SIGRT_1, {sa_handler=0x7f6f2309ec90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f6f230ac420}, NULL, 8) = 0 <0.000042>
+23:18:31.820102 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0 <0.000017>
+23:18:31.820391 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000018>
+23:18:31.820830 brk(NULL)               = 0x20d6000 <0.000017>
+23:18:31.821064 brk(0x20f7000)          = 0x20f7000 <0.000019>
+23:18:31.821226 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3 <0.000050>
+23:18:31.821565 fstat(3, {st_mode=S_IFREG|0644, st_size=5699248, ...}) = 0 <0.000016>
+23:18:31.821874 mmap(NULL, 5699248, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6f227da000 <0.000025>
+23:18:31.822157 close(3)                = 0 <0.000043>
+23:18:31.822329 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3 <0.000047>
+23:18:31.822559 fstat(3, {st_mode=S_IFREG|0644, st_size=27002, ...}) = 0 <0.000018>
+23:18:31.822818 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7f6f230e4000 <0.000044>
+23:18:31.822973 close(3)                = 0 <0.000018>
+23:18:31.823227 futex(0x7f6f22f39954, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000019>
+23:18:31.823744 stat("/home/grzenda/.vscode-server/bin/92da9481c0904c6adfe372c12da3b7748d74bdcb/bin/remote-cli/python3", 0x7ffefa0385a0) = -1 ENOENT (No such file or directory) <0.000062>
+23:18:31.823996 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/python3", {st_mode=S_IFREG|0775, st_size=13018576, ...}) = 0 <0.000030>
+23:18:31.824101 readlink("/home/grzenda/.conda/envs/weighted-retraining/bin/python3", "python3.7", 4096) = 9 <0.000025>
+23:18:31.824209 readlink("/home/grzenda/.conda/envs/weighted-retraining/bin/python3.7", 0x7ffefa032510, 4096) = -1 EINVAL (Invalid argument) <0.000024>
+23:18:31.824564 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000028>
+23:18:31.824659 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.824750 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/Modules/Setup", 0x7ffefa0385a0) = -1 ENOENT (No such file or directory) <0.000023>
+23:18:31.824844 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/lib/python3.7/os.py", 0x7ffefa0334a0) = -1 ENOENT (No such file or directory) <0.000023>
+23:18:31.824934 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/lib/python3.7/os.pyc", 0x7ffefa0334a0) = -1 ENOENT (No such file or directory) <0.000048>
+23:18:31.825350 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/os.py", {st_mode=S_IFREG|0664, st_size=37901, ...}) = 0 <0.000309>
+23:18:31.825925 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/pybuilddir.txt", 0x7ffefa033580) = -1 ENOENT (No such file or directory) <0.000049>
+23:18:31.826251 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/lib/python3.7/lib-dynload", 0x7ffefa033580) = -1 ENOENT (No such file or directory) <0.000041>
+23:18:31.826430 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000152>
+23:18:31.826964 ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000053>
+23:18:31.827274 getrandom("\x0f\x12\x10\x2e\x9f\x04\x76\x86\x2a\x5f\x6d\x1b\x66\xa3\x5f\xa3\xe1\x28\xdf\xb9\x4d\xfb\xd5\xc8", 24, GRND_NONBLOCK) = 24 <0.000050>
+23:18:31.827442 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2279a000 <0.000038>
+23:18:31.829165 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}) = 0 <0.000070>
+23:18:31.829918 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2275a000 <0.000023>
+23:18:31.830855 brk(0x211c000)          = 0x211c000 <0.000021>
+23:18:31.832008 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2271a000 <0.000072>
+23:18:31.833720 brk(0x213f000)          = 0x213f000 <0.000072>
+23:18:31.834522 sysinfo({uptime=11207652, loads=[29888, 79840, 66272], totalram=201467392000, freeram=87453114368, sharedram=5267456, bufferram=1950281728, totalswap=1027600384, freeswap=552878080, procs=1358, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000021>
+23:18:31.835213 sigaltstack({ss_sp=0x20f6850, ss_flags=0, ss_size=16384}, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0 <0.000067>
+23:18:31.835618 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python37.zip", 0x7ffefa043040) = -1 ENOENT (No such file or directory) <0.000062>
+23:18:31.835851 stat("/home/grzenda/.conda/envs/weighted-retraining/lib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=1294, ...}) = 0 <0.000112>
+23:18:31.836239 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python37.zip", 0x7ffefa0427a0) = -1 ENOENT (No such file or directory) <0.000053>
+23:18:31.836587 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000057>
+23:18:31.836757 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000056>
+23:18:31.837094 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000027>
+23:18:31.837416 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000232>
+23:18:31.837798 fstat(3, {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000018>
+23:18:31.837886 getdents64(3, /* 218 entries */, 32768) = 7592 <0.000059>
+23:18:31.838122 getdents64(3, /* 0 entries */, 32768) = 0 <0.000055>
+23:18:31.838295 close(3)                = 0 <0.000023>
+23:18:31.838447 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa042b40) = -1 ENOENT (No such file or directory) <0.000170>
+23:18:31.838899 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__init__.abi3.so", 0x7ffefa042b40) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.839209 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__init__.so", 0x7ffefa042b40) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.839324 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__init__.py", {st_mode=S_IFREG|0664, st_size=5668, ...}) = 0 <0.000253>
+23:18:31.839870 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000050>
+23:18:31.840012 munmap(0x7f6f226da000, 262144) = 0 <0.000059>
+23:18:31.840580 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000043>
+23:18:31.840745 munmap(0x7f6f226da000, 262144) = 0 <0.000050>
+23:18:31.840861 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000020>
+23:18:31.840935 munmap(0x7f6f226da000, 262144) = 0 <0.000024>
+23:18:31.841342 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000019>
+23:18:31.841414 munmap(0x7f6f226da000, 262144) = 0 <0.000023>
+23:18:31.841489 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000019>
+23:18:31.841562 munmap(0x7f6f226da000, 262144) = 0 <0.000022>
+23:18:31.841633 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000019>
+23:18:31.841707 munmap(0x7f6f226da000, 262144) = 0 <0.000049>
+23:18:31.842180 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000041>
+23:18:31.842330 munmap(0x7f6f226da000, 262144) = 0 <0.000047>
+23:18:31.842540 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f226da000 <0.000019>
+23:18:31.843466 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__init__.py", {st_mode=S_IFREG|0664, st_size=5668, ...}) = 0 <0.000079>
+23:18:31.843757 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__pycache__/__init__.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000439>
+23:18:31.844546 fcntl(3, F_GETFD)       = 0x1 (flags FD_CLOEXEC) <0.000063>
+23:18:31.844668 fstat(3, {st_mode=S_IFREG|0664, st_size=3924, ...}) = 0 <0.000021>
+23:18:31.844861 lseek(3, 0, SEEK_CUR)   = 0 <0.000023>
+23:18:31.845121 fstat(3, {st_mode=S_IFREG|0664, st_size=3924, ...}) = 0 <0.000120>
+23:18:31.845457 read(3, "B\r\r\n\0\0\0\08\370Nc$\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 3925) = 3924 <0.000065>
+23:18:31.845581 read(3, "", 1)          = 0 <0.000019>
+23:18:31.845761 close(3)                = 0 <0.002583>
+23:18:31.848845 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000034>
+23:18:31.849097 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/codecs.py", {st_mode=S_IFREG|0664, st_size=36615, ...}) = 0 <0.000317>
+23:18:31.849676 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/codecs.py", {st_mode=S_IFREG|0664, st_size=36615, ...}) = 0 <0.000033>
+23:18:31.849889 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/codecs.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000613>
+23:18:31.850668 fstat(3, {st_mode=S_IFREG|0664, st_size=34093, ...}) = 0 <0.000021>
+23:18:31.850825 lseek(3, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.850949 fstat(3, {st_mode=S_IFREG|0664, st_size=34093, ...}) = 0 <0.000020>
+23:18:31.851089 read(3, "B\r\r\n\0\0\0\0006\370Nc\7\217\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0,\0\0"..., 34094) = 34093 <0.000050>
+23:18:31.851252 read(3, "", 1)          = 0 <0.000020>
+23:18:31.851388 close(3)                = 0 <0.000376>
+23:18:31.852835 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000038>
+23:18:31.853090 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000030>
+23:18:31.853312 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000028>
+23:18:31.853966 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000255>
+23:18:31.854403 fstat(3, {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000020>
+23:18:31.854560 getdents64(3, /* 128 entries */, 32768) = 4336 <0.000049>
+23:18:31.854867 getdents64(3, /* 0 entries */, 32768) = 0 <0.000021>
+23:18:31.854949 close(3)                = 0 <0.000020>
+23:18:31.855085 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/aliases.py", {st_mode=S_IFREG|0664, st_size=15577, ...}) = 0 <0.000256>
+23:18:31.855516 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/aliases.py", {st_mode=S_IFREG|0664, st_size=15577, ...}) = 0 <0.000029>
+23:18:31.855636 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__pycache__/aliases.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000499>
+23:18:31.856202 fstat(3, {st_mode=S_IFREG|0664, st_size=6273, ...}) = 0 <0.000020>
+23:18:31.856284 lseek(3, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.856345 fstat(3, {st_mode=S_IFREG|0664, st_size=6273, ...}) = 0 <0.000020>
+23:18:31.856428 read(3, "B\r\r\n\0\0\0\0007\370Nc\331<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0D\1\0"..., 6274) = 6273 <0.000024>
+23:18:31.856523 read(3, "", 1)          = 0 <0.000018>
+23:18:31.856980 close(3)                = 0 <0.000209>
+23:18:31.858080 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000087>
+23:18:31.858317 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/utf_8.py", {st_mode=S_IFREG|0664, st_size=1005, ...}) = 0 <0.000179>
+23:18:31.859018 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/utf_8.py", {st_mode=S_IFREG|0664, st_size=1005, ...}) = 0 <0.000029>
+23:18:31.859413 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__pycache__/utf_8.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000286>
+23:18:31.860147 fstat(3, {st_mode=S_IFREG|0664, st_size=1591, ...}) = 0 <0.000020>
+23:18:31.860235 lseek(3, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.860299 fstat(3, {st_mode=S_IFREG|0664, st_size=1591, ...}) = 0 <0.000019>
+23:18:31.860373 read(3, "B\r\r\n\0\0\0\08\370Nc\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 1592) = 1591 <0.000021>
+23:18:31.860448 read(3, "", 1)          = 0 <0.000019>
+23:18:31.860538 close(3)                = 0 <0.000218>
+23:18:31.861448 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0 <0.000025>
+23:18:31.861803 rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0 <0.000043>
+23:18:31.861996 getpid()                = 3524796 <0.000042>
+23:18:31.862314 rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.862688 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000024>
+23:18:31.862962 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.863032 rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000020>
+23:18:31.863103 rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.863171 rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.863240 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.863308 rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.863376 rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.863444 rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000019>
+23:18:31.863725 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.863793 rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.863859 rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, 8) = 0 <0.000016>
+23:18:31.863918 rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.864189 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.864260 rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.864323 rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.865126 rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000037>
+23:18:31.865277 rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000036>
+23:18:31.865409 rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000015>
+23:18:31.865794 rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.865860 rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.865925 rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.865987 rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.866210 rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, 8) = 0 <0.000017>
+23:18:31.866277 rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.866346 rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.866405 rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.866642 rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.866709 rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.866774 rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.866832 rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000039>
+23:18:31.867165 rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000036>
+23:18:31.867299 rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000034>
+23:18:31.867580 rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000036>
+23:18:31.867734 rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000036>
+23:18:31.867869 rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000035>
+23:18:31.868119 rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.868186 rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.868251 rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.868313 rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000015>
+23:18:31.868559 rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.868628 rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.868695 rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.868759 rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.869008 rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.869074 rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.869142 rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.869199 rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000038>
+23:18:31.869577 rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000037>
+23:18:31.869717 rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000038>
+23:18:31.869836 rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000018>
+23:18:31.870166 rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.870237 rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.870299 rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.870549 rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000019>
+23:18:31.870615 rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000019>
+23:18:31.870683 rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.870740 rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.870976 rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000017>
+23:18:31.871043 rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000016>
+23:18:31.871108 rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000015>
+23:18:31.871341 rt_sigaction(SIGINT, {sa_handler=0x58adf0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0 <0.000019>
+23:18:31.871592 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings", {st_mode=S_IFDIR|S_ISGID|0770, st_size=128, ...}) = 0 <0.000133>
+23:18:31.872186 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/latin_1.py", {st_mode=S_IFREG|0664, st_size=1264, ...}) = 0 <0.000191>
+23:18:31.872705 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/latin_1.py", {st_mode=S_IFREG|0664, st_size=1264, ...}) = 0 <0.000049>
+23:18:31.872855 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/encodings/__pycache__/latin_1.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000262>
+23:18:31.873260 fstat(3, {st_mode=S_IFREG|0664, st_size=1873, ...}) = 0 <0.000036>
+23:18:31.873439 lseek(3, 0, SEEK_CUR)   = 0 <0.000039>
+23:18:31.873716 fstat(3, {st_mode=S_IFREG|0664, st_size=1873, ...}) = 0 <0.000036>
+23:18:31.873829 read(3, "B\r\r\n\0\0\0\08\370Nc\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 1874) = 1873 <0.000021>
+23:18:31.874254 read(3, "", 1)          = 0 <0.000080>
+23:18:31.874645 close(3)                = 0 <0.000177>
+23:18:31.875388 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000087>
+23:18:31.875777 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/io.py", {st_mode=S_IFREG|0664, st_size=3517, ...}) = 0 <0.000156>
+23:18:31.876195 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/io.py", {st_mode=S_IFREG|0664, st_size=3517, ...}) = 0 <0.000099>
+23:18:31.876539 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/io.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000279>
+23:18:31.876920 fstat(3, {st_mode=S_IFREG|0664, st_size=3386, ...}) = 0 <0.000039>
+23:18:31.877054 lseek(3, 0, SEEK_CUR)   = 0 <0.000052>
+23:18:31.877335 fstat(3, {st_mode=S_IFREG|0664, st_size=3386, ...}) = 0 <0.000038>
+23:18:31.877462 read(3, "B\r\r\n\0\0\0\0006\370Nc\275\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0"..., 3387) = 3386 <0.000255>
+23:18:31.877977 read(3, "", 1)          = 0 <0.000019>
+23:18:31.878058 close(3)                = 0 <0.000166>
+23:18:31.878494 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000061>
+23:18:31.878885 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/abc.py", {st_mode=S_IFREG|0664, st_size=5580, ...}) = 0 <0.000261>
+23:18:31.879617 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/abc.py", {st_mode=S_IFREG|0664, st_size=5580, ...}) = 0 <0.000065>
+23:18:31.879793 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/abc.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000275>
+23:18:31.880388 fstat(3, {st_mode=S_IFREG|0664, st_size=6428, ...}) = 0 <0.000019>
+23:18:31.880481 lseek(3, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.880565 fstat(3, {st_mode=S_IFREG|0664, st_size=6428, ...}) = 0 <0.000017>
+23:18:31.880916 read(3, "B\r\r\n\0\0\0\0006\370Nc\314\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 6429) = 6428 <0.000025>
+23:18:31.880990 read(3, "", 1)          = 0 <0.000017>
+23:18:31.881056 close(3)                = 0 <0.000202>
+23:18:31.881925 dup(0)                  = 3 <0.000020>
+23:18:31.882014 close(3)                = 0 <0.000017>
+23:18:31.882090 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}) = 0 <0.000019>
+23:18:31.882417 ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000020>
+23:18:31.882501 lseek(0, 0, SEEK_CUR)   = -1 ESPIPE (Illegal seek) <0.000017>
+23:18:31.882578 ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000018>
+23:18:31.882812 ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000019>
+23:18:31.882914 dup(1)                  = 3 <0.000016>
+23:18:31.883183 close(3)                = 0 <0.000041>
+23:18:31.883326 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}) = 0 <0.000035>
+23:18:31.883652 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000019>
+23:18:31.883732 lseek(1, 0, SEEK_CUR)   = -1 ESPIPE (Illegal seek) <0.000016>
+23:18:31.883805 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000018>
+23:18:31.884037 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000018>
+23:18:31.884124 dup(2)                  = 3 <0.000017>
+23:18:31.884185 close(3)                = 0 <0.000017>
+23:18:31.884430 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x5), ...}) = 0 <0.000019>
+23:18:31.884519 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000018>
+23:18:31.884590 lseek(2, 0, SEEK_CUR)   = -1 ESPIPE (Illegal seek) <0.000017>
+23:18:31.884835 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000018>
+23:18:31.884907 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000017>
+23:18:31.885047 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000058>
+23:18:31.885284 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site.py", {st_mode=S_IFREG|0664, st_size=21307, ...}) = 0 <0.000287>
+23:18:31.885731 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site.py", {st_mode=S_IFREG|0664, st_size=21307, ...}) = 0 <0.000028>
+23:18:31.885993 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/site.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000234>
+23:18:31.886425 fstat(3, {st_mode=S_IFREG|0664, st_size=16527, ...}) = 0 <0.000092>
+23:18:31.886701 lseek(3, 0, SEEK_CUR)   = 0 <0.000019>
+23:18:31.886767 fstat(3, {st_mode=S_IFREG|0664, st_size=16527, ...}) = 0 <0.000017>
+23:18:31.886838 read(3, "B\r\r\n\0\0\0\0006\370Nc;S\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 16528) = 16527 <0.000032>
+23:18:31.887072 read(3, "", 1)          = 0 <0.000019>
+23:18:31.887139 close(3)                = 0 <0.000221>
+23:18:31.887592 brk(0x2160000)          = 0x2160000 <0.000092>
+23:18:31.888056 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2269a000 <0.000051>
+23:18:31.888382 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000069>
+23:18:31.888744 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/os.py", {st_mode=S_IFREG|0664, st_size=37901, ...}) = 0 <0.000059>
+23:18:31.889158 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/os.py", {st_mode=S_IFREG|0664, st_size=37901, ...}) = 0 <0.000063>
+23:18:31.889540 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/os.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000371>
+23:18:31.890012 fstat(3, {st_mode=S_IFREG|0664, st_size=29775, ...}) = 0 <0.000035>
+23:18:31.890307 lseek(3, 0, SEEK_CUR)   = 0 <0.000048>
+23:18:31.890596 fstat(3, {st_mode=S_IFREG|0664, st_size=29775, ...}) = 0 <0.000038>
+23:18:31.890734 read(3, "B\r\r\n\0\0\0\0006\370Nc\r\224\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\23\0\0"..., 29776) = 29775 <0.000058>
+23:18:31.891047 read(3, "", 1)          = 0 <0.000021>
+23:18:31.891119 close(3)                = 0 <0.000179>
+23:18:31.892030 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000045>
+23:18:31.892199 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/stat.py", {st_mode=S_IFREG|0664, st_size=5391, ...}) = 0 <0.000186>
+23:18:31.892658 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/stat.py", {st_mode=S_IFREG|0664, st_size=5391, ...}) = 0 <0.000066>
+23:18:31.893004 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/stat.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000234>
+23:18:31.893413 fstat(3, {st_mode=S_IFREG|0664, st_size=4321, ...}) = 0 <0.000031>
+23:18:31.893515 lseek(3, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.893758 fstat(3, {st_mode=S_IFREG|0664, st_size=4321, ...}) = 0 <0.000019>
+23:18:31.893828 read(3, "B\r\r\n\0\0\0\0006\370Nc\17\25\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0"..., 4322) = 4321 <0.000022>
+23:18:31.893903 read(3, "", 1)          = 0 <0.000017>
+23:18:31.893964 close(3)                = 0 <0.000261>
+23:18:31.894975 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000032>
+23:18:31.895141 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_collections_abc.py", {st_mode=S_IFREG|0664, st_size=26424, ...}) = 0 <0.000250>
+23:18:31.895989 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_collections_abc.py", {st_mode=S_IFREG|0664, st_size=26424, ...}) = 0 <0.000077>
+23:18:31.896380 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/_collections_abc.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000373>
+23:18:31.896957 fstat(3, {st_mode=S_IFREG|0664, st_size=28919, ...}) = 0 <0.000025>
+23:18:31.897057 lseek(3, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.897327 fstat(3, {st_mode=S_IFREG|0664, st_size=28919, ...}) = 0 <0.000019>
+23:18:31.897409 read(3, "B\r\r\n\0\0\0\0006\370Nc8g\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0"..., 28920) = 28919 <0.000033>
+23:18:31.897490 read(3, "", 1)          = 0 <0.000018>
+23:18:31.897709 close(3)                = 0 <0.000192>
+23:18:31.899166 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2265a000 <0.000073>
+23:18:31.900055 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000033>
+23:18:31.900206 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/posixpath.py", {st_mode=S_IFREG|0664, st_size=15771, ...}) = 0 <0.000162>
+23:18:31.900641 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/posixpath.py", {st_mode=S_IFREG|0664, st_size=15771, ...}) = 0 <0.000053>
+23:18:31.900791 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/posixpath.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000242>
+23:18:31.901203 fstat(3, {st_mode=S_IFREG|0664, st_size=10406, ...}) = 0 <0.000023>
+23:18:31.901293 lseek(3, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.901357 fstat(3, {st_mode=S_IFREG|0664, st_size=10406, ...}) = 0 <0.000017>
+23:18:31.901424 read(3, "B\r\r\n\0\0\0\0006\370Nc\233=\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0"..., 10407) = 10406 <0.000032>
+23:18:31.901704 read(3, "", 1)          = 0 <0.000019>
+23:18:31.901781 close(3)                = 0 <0.000171>
+23:18:31.902200 mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f230bf000 <0.000047>
+23:18:31.902600 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000034>
+23:18:31.902761 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/genericpath.py", {st_mode=S_IFREG|0664, st_size=4912, ...}) = 0 <0.000165>
+23:18:31.903285 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/genericpath.py", {st_mode=S_IFREG|0664, st_size=4912, ...}) = 0 <0.000027>
+23:18:31.903664 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/genericpath.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000250>
+23:18:31.904077 fstat(3, {st_mode=S_IFREG|0664, st_size=3881, ...}) = 0 <0.000022>
+23:18:31.904164 lseek(3, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.904233 fstat(3, {st_mode=S_IFREG|0664, st_size=3881, ...}) = 0 <0.000018>
+23:18:31.904305 read(3, "B\r\r\n\0\0\0\0006\370Nc0\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 3882) = 3881 <0.000021>
+23:18:31.904382 read(3, "", 1)          = 0 <0.000018>
+23:18:31.904453 close(3)                = 0 <0.000230>
+23:18:31.906016 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000083>
+23:18:31.906714 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_sitebuiltins.py", {st_mode=S_IFREG|0664, st_size=3115, ...}) = 0 <0.000292>
+23:18:31.907316 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_sitebuiltins.py", {st_mode=S_IFREG|0664, st_size=3115, ...}) = 0 <0.000052>
+23:18:31.907462 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/_sitebuiltins.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000233>
+23:18:31.907903 fstat(3, {st_mode=S_IFREG|0664, st_size=3442, ...}) = 0 <0.000046>
+23:18:31.908043 lseek(3, 0, SEEK_CUR)   = 0 <0.000036>
+23:18:31.908340 fstat(3, {st_mode=S_IFREG|0664, st_size=3442, ...}) = 0 <0.000019>
+23:18:31.908688 read(3, "B\r\r\n\0\0\0\0006\370Nc+\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 3443) = 3442 <0.000039>
+23:18:31.908783 read(3, "", 1)          = 0 <0.000019>
+23:18:31.908858 close(3)                = 0 <0.000235>
+23:18:31.909489 stat("/home/grzenda/.conda/envs/weighted-retraining/bin/pyvenv.cfg", 0x7ffefa042aa0) = -1 ENOENT (No such file or directory) <0.000097>
+23:18:31.909693 stat("/home/grzenda/.conda/envs/weighted-retraining/pyvenv.cfg", 0x7ffefa042aa0) = -1 ENOENT (No such file or directory) <0.000024>
+23:18:31.909795 geteuid()               = 20684 <0.000017>
+23:18:31.909863 getuid()                = 20684 <0.000017>
+23:18:31.909929 getegid()               = 24123 <0.000017>
+23:18:31.909991 getgid()                = 24123 <0.000017>
+23:18:31.910586 stat("/home/grzenda/.local/lib/python3.7/site-packages", 0x7ffefa042d70) = -1 ENOENT (No such file or directory) <0.000407>
+23:18:31.911238 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000151>
+23:18:31.911678 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000185>
+23:18:31.912099 fstat(3, {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000050>
+23:18:31.912240 getdents64(3, /* 271 entries */, 32768) = 11032 <0.000079>
+23:18:31.912721 getdents64(3, /* 0 entries */, 32768) = 0 <0.000019>
+23:18:31.912923 close(3)                = 0 <0.000024>
+23:18:31.913119 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/distutils-precedence.pth", O_RDONLY|O_CLOEXEC) = 3 <0.000277>
+23:18:31.913789 fstat(3, {st_mode=S_IFREG|0664, st_size=151, ...}) = 0 <0.000020>
+23:18:31.913875 ioctl(3, TCGETS, 0x7ffefa042780) = -1 ENOTTY (Inappropriate ioctl for device) <0.000018>
+23:18:31.913955 lseek(3, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.914030 ioctl(3, TCGETS, 0x7ffefa042720) = -1 ENOTTY (Inappropriate ioctl for device) <0.000018>
+23:18:31.914155 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000054>
+23:18:31.914527 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_bootlocale.py", {st_mode=S_IFREG|0664, st_size=1801, ...}) = 0 <0.000166>
+23:18:31.914981 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_bootlocale.py", {st_mode=S_IFREG|0664, st_size=1801, ...}) = 0 <0.000026>
+23:18:31.915280 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/_bootlocale.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000274>
+23:18:31.915716 fstat(4, {st_mode=S_IFREG|0664, st_size=1226, ...}) = 0 <0.000020>
+23:18:31.915801 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.915869 fstat(4, {st_mode=S_IFREG|0664, st_size=1226, ...}) = 0 <0.000019>
+23:18:31.915942 read(4, "B\r\r\n\0\0\0\0006\370Nc\t\7\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 1227) = 1226 <0.000021>
+23:18:31.916017 read(4, "", 1)          = 0 <0.000019>
+23:18:31.916088 close(4)                = 0 <0.000192>
+23:18:31.916769 read(3, "import os; var = 'SETUPTOOLS_USE"..., 8192) = 151 <0.000021>
+23:18:31.917177 brk(0x2185000)          = 0x2185000 <0.000024>
+23:18:31.917313 brk(0x217d000)          = 0x217d000 <0.000025>
+23:18:31.917968 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000040>
+23:18:31.918336 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000032>
+23:18:31.918439 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000025>
+23:18:31.918553 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000029>
+23:18:31.918866 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000156>
+23:18:31.919294 fstat(4, {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000038>
+23:18:31.919421 getdents64(4, /* 70 entries */, 32768) = 4376 <0.000037>
+23:18:31.919734 getdents64(4, /* 0 entries */, 32768) = 0 <0.000019>
+23:18:31.919806 close(4)                = 0 <0.000020>
+23:18:31.919929 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000033>
+23:18:31.920181 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000026>
+23:18:31.920291 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000025>
+23:18:31.920383 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000244>
+23:18:31.920882 fstat(4, {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000035>
+23:18:31.921029 getdents64(4, /* 271 entries */, 32768) = 11032 <0.000083>
+23:18:31.921511 getdents64(4, /* 0 entries */, 32768) = 0 <0.000040>
+23:18:31.921722 close(4)                = 0 <0.000020>
+23:18:31.922102 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa040e50) = -1 ENOENT (No such file or directory) <0.000196>
+23:18:31.922529 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__init__.abi3.so", 0x7ffefa040e50) = -1 ENOENT (No such file or directory) <0.000047>
+23:18:31.922692 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__init__.so", 0x7ffefa040e50) = -1 ENOENT (No such file or directory) <0.000047>
+23:18:31.923091 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0664, st_size=6128, ...}) = 0 <0.000200>
+23:18:31.923902 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__init__.py", {st_mode=S_IFREG|0664, st_size=6128, ...}) = 0 <0.000032>
+23:18:31.924024 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/_distutils_hack/__pycache__/__init__.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000445>
+23:18:31.924866 fstat(4, {st_mode=S_IFREG|0664, st_size=7382, ...}) = 0 <0.000036>
+23:18:31.925014 lseek(4, 0, SEEK_CUR)   = 0 <0.000037>
+23:18:31.925383 fstat(4, {st_mode=S_IFREG|0664, st_size=7382, ...}) = 0 <0.000080>
+23:18:31.925730 read(4, "B\r\r\n\0\0\0\0u\n\177c\360\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0"..., 7383) = 7382 <0.000044>
+23:18:31.925891 read(4, "", 1)          = 0 <0.000039>
+23:18:31.926037 close(4)                = 0 <0.000152>
+23:18:31.926704 read(3, "", 8192)       = 0 <0.000025>
+23:18:31.926816 close(3)                = 0 <0.000202>
+23:18:31.927304 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/easy-install.pth", O_RDONLY|O_CLOEXEC) = 3 <0.000237>
+23:18:31.927763 fstat(3, {st_mode=S_IFREG|0660, st_size=34, ...}) = 0 <0.000019>
+23:18:31.927848 ioctl(3, TCGETS, 0x7ffefa042780) = -1 ENOTTY (Inappropriate ioctl for device) <0.000018>
+23:18:31.927927 lseek(3, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.927995 ioctl(3, TCGETS, 0x7ffefa042720) = -1 ENOTTY (Inappropriate ioctl for device) <0.000017>
+23:18:31.928097 read(3, "/home/grzenda/weighted-retrainin"..., 8192) = 34 <0.000021>
+23:18:31.928442 stat("/home/grzenda/weighted-retraining", {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000231>
+23:18:31.928898 read(3, "", 8192)       = 0 <0.000040>
+23:18:31.929025 close(3)                = 0 <0.000266>
+23:18:31.929398 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google_auth-1.22.1-py3.6-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3 <0.000254>
+23:18:31.930008 fstat(3, {st_mode=S_IFREG|0664, st_size=539, ...}) = 0 <0.000040>
+23:18:31.930146 ioctl(3, TCGETS, 0x7ffefa042780) = -1 ENOTTY (Inappropriate ioctl for device) <0.000033>
+23:18:31.930456 lseek(3, 0, SEEK_CUR)   = 0 <0.000045>
+23:18:31.930786 ioctl(3, TCGETS, 0x7ffefa042720) = -1 ENOTTY (Inappropriate ioctl for device) <0.000097>
+23:18:31.931143 read(3, "import sys, types, os;has_mfs = "..., 8192) = 539 <0.000096>
+23:18:31.931889 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000032>
+23:18:31.932027 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/types.py", {st_mode=S_IFREG|0664, st_size=9897, ...}) = 0 <0.000159>
+23:18:31.932460 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/types.py", {st_mode=S_IFREG|0664, st_size=9897, ...}) = 0 <0.000052>
+23:18:31.932629 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/types.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000252>
+23:18:31.933000 fstat(4, {st_mode=S_IFREG|0664, st_size=8953, ...}) = 0 <0.000018>
+23:18:31.933079 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.933143 fstat(4, {st_mode=S_IFREG|0664, st_size=8953, ...}) = 0 <0.000020>
+23:18:31.933213 read(4, "B\r\r\n\0\0\0\0006\370Nc\251&\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 8954) = 8953 <0.000024>
+23:18:31.933290 read(4, "", 1)          = 0 <0.000018>
+23:18:31.933358 close(4)                = 0 <0.000173>
+23:18:31.934076 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000069>
+23:18:31.934273 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa040570) = -1 ENOENT (No such file or directory) <0.000185>
+23:18:31.934716 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__init__.abi3.so", 0x7ffefa040570) = -1 ENOENT (No such file or directory) <0.000121>
+23:18:31.935061 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__init__.so", 0x7ffefa040570) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.935163 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__init__.py", {st_mode=S_IFREG|0664, st_size=6037, ...}) = 0 <0.000181>
+23:18:31.935625 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__init__.py", {st_mode=S_IFREG|0664, st_size=6037, ...}) = 0 <0.000063>
+23:18:31.935805 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__pycache__/__init__.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000365>
+23:18:31.936528 fstat(4, {st_mode=S_IFREG|0664, st_size=3709, ...}) = 0 <0.000033>
+23:18:31.936642 lseek(4, 0, SEEK_CUR)   = 0 <0.000019>
+23:18:31.936961 fstat(4, {st_mode=S_IFREG|0664, st_size=3709, ...}) = 0 <0.000090>
+23:18:31.937288 read(4, "B\r\r\n\0\0\0\0007\370Nc\225\27\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 3710) = 3709 <0.000021>
+23:18:31.937366 read(4, "", 1)          = 0 <0.000017>
+23:18:31.937434 close(4)                = 0 <0.000194>
+23:18:31.938071 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000061>
+23:18:31.938358 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/warnings.py", {st_mode=S_IFREG|0664, st_size=20080, ...}) = 0 <0.000172>
+23:18:31.938780 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/warnings.py", {st_mode=S_IFREG|0664, st_size=20080, ...}) = 0 <0.000060>
+23:18:31.938951 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/warnings.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000287>
+23:18:31.939521 fstat(4, {st_mode=S_IFREG|0664, st_size=13813, ...}) = 0 <0.000051>
+23:18:31.939668 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.939934 fstat(4, {st_mode=S_IFREG|0664, st_size=13813, ...}) = 0 <0.000020>
+23:18:31.940014 read(4, "B\r\r\n\0\0\0\0006\370NcpN\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 13814) = 13813 <0.000027>
+23:18:31.940095 read(4, "", 1)          = 0 <0.000018>
+23:18:31.940165 close(4)                = 0 <0.000231>
+23:18:31.941186 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000071>
+23:18:31.941363 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000044>
+23:18:31.941512 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000027>
+23:18:31.941823 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4 <0.000195>
+23:18:31.942254 fstat(4, {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000017>
+23:18:31.942328 getdents64(4, /* 10 entries */, 32768) = 328 <0.000022>
+23:18:31.942407 getdents64(4, /* 0 entries */, 32768) = 0 <0.000018>
+23:18:31.942474 close(4)                = 0 <0.000020>
+23:18:31.942578 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/util.py", {st_mode=S_IFREG|0664, st_size=11319, ...}) = 0 <0.000171>
+23:18:31.943115 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/util.py", {st_mode=S_IFREG|0664, st_size=11319, ...}) = 0 <0.000064>
+23:18:31.943445 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__pycache__/util.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000264>
+23:18:31.944049 fstat(4, {st_mode=S_IFREG|0664, st_size=9333, ...}) = 0 <0.000019>
+23:18:31.944136 lseek(4, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.944197 fstat(4, {st_mode=S_IFREG|0664, st_size=9333, ...}) = 0 <0.000018>
+23:18:31.944456 read(4, "B\r\r\n\0\0\0\0007\370Nc7,\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 9334) = 9333 <0.000049>
+23:18:31.944561 read(4, "", 1)          = 0 <0.000019>
+23:18:31.944630 close(4)                = 0 <0.000187>
+23:18:31.945070 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000063>
+23:18:31.945427 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/abc.py", {st_mode=S_IFREG|0664, st_size=12873, ...}) = 0 <0.000211>
+23:18:31.945946 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/abc.py", {st_mode=S_IFREG|0664, st_size=12873, ...}) = 0 <0.000034>
+23:18:31.946064 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__pycache__/abc.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000328>
+23:18:31.946528 fstat(4, {st_mode=S_IFREG|0664, st_size=13464, ...}) = 0 <0.000019>
+23:18:31.946617 lseek(4, 0, SEEK_CUR)   = 0 <0.000017>
+23:18:31.946677 fstat(4, {st_mode=S_IFREG|0664, st_size=13464, ...}) = 0 <0.000018>
+23:18:31.946945 read(4, "B\r\r\n\0\0\0\0007\370NcI2\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0"..., 13465) = 13464 <0.000029>
+23:18:31.947027 read(4, "", 1)          = 0 <0.000019>
+23:18:31.947095 close(4)                = 0 <0.000168>
+23:18:31.947499 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2261a000 <0.000102>
+23:18:31.947854 munmap(0x7f6f2261a000, 262144) = 0 <0.000029>
+23:18:31.947932 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f2261a000 <0.000021>
+23:18:31.948149 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib", {st_mode=S_IFDIR|S_ISGID|0770, st_size=10, ...}) = 0 <0.000063>
+23:18:31.948429 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/machinery.py", {st_mode=S_IFREG|0664, st_size=844, ...}) = 0 <0.000213>
+23:18:31.948950 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/machinery.py", {st_mode=S_IFREG|0664, st_size=844, ...}) = 0 <0.000063>
+23:18:31.949275 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/importlib/__pycache__/machinery.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000287>
+23:18:31.949876 fstat(4, {st_mode=S_IFREG|0664, st_size=949, ...}) = 0 <0.000083>
+23:18:31.950242 lseek(4, 0, SEEK_CUR)   = 0 <0.000037>
+23:18:31.950374 fstat(4, {st_mode=S_IFREG|0664, st_size=949, ...}) = 0 <0.000035>
+23:18:31.950751 read(4, "B\r\r\n\0\0\0\0007\370NcL\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 950) = 949 <0.000021>
+23:18:31.950822 read(4, "", 1)          = 0 <0.000018>
+23:18:31.950892 close(4)                = 0 <0.000197>
+23:18:31.951941 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000082>
+23:18:31.952352 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/contextlib.py", {st_mode=S_IFREG|0664, st_size=24763, ...}) = 0 <0.000323>
+23:18:31.952932 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/contextlib.py", {st_mode=S_IFREG|0664, st_size=24763, ...}) = 0 <0.000058>
+23:18:31.953107 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/contextlib.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000288>
+23:18:31.953890 fstat(4, {st_mode=S_IFREG|0664, st_size=20436, ...}) = 0 <0.000022>
+23:18:31.953982 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.954050 fstat(4, {st_mode=S_IFREG|0664, st_size=20436, ...}) = 0 <0.000019>
+23:18:31.954123 read(4, "B\r\r\n\0\0\0\0006\370Nc\273`\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0"..., 20437) = 20436 <0.000033>
+23:18:31.954208 read(4, "", 1)          = 0 <0.000018>
+23:18:31.954279 close(4)                = 0 <0.000177>
+23:18:31.955116 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000028>
+23:18:31.955315 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa03eef0) = -1 ENOENT (No such file or directory) <0.000178>
+23:18:31.955746 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__init__.abi3.so", 0x7ffefa03eef0) = -1 ENOENT (No such file or directory) <0.000043>
+23:18:31.955868 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__init__.so", 0x7ffefa03eef0) = -1 ENOENT (No such file or directory) <0.000028>
+23:18:31.955967 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__init__.py", {st_mode=S_IFREG|0664, st_size=48380, ...}) = 0 <0.000268>
+23:18:31.956523 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__init__.py", {st_mode=S_IFREG|0664, st_size=48380, ...}) = 0 <0.000031>
+23:18:31.956900 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__pycache__/__init__.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000412>
+23:18:31.957416 fstat(4, {st_mode=S_IFREG|0664, st_size=47069, ...}) = 0 <0.000090>
+23:18:31.957757 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.957828 fstat(4, {st_mode=S_IFREG|0664, st_size=47069, ...}) = 0 <0.000021>
+23:18:31.957911 read(4, "B\r\r\n\0\0\0\0007\370Nc\374\274\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0"..., 47070) = 47069 <0.000067>
+23:18:31.958041 read(4, "", 1)          = 0 <0.000022>
+23:18:31.958330 close(4)                = 0 <0.000268>
+23:18:31.959965 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000087>
+23:18:31.960476 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/operator.py", {st_mode=S_IFREG|0664, st_size=10863, ...}) = 0 <0.000201>
+23:18:31.960978 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/operator.py", {st_mode=S_IFREG|0664, st_size=10863, ...}) = 0 <0.000034>
+23:18:31.961186 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/operator.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000422>
+23:18:31.961996 fstat(4, {st_mode=S_IFREG|0664, st_size=13877, ...}) = 0 <0.000056>
+23:18:31.962154 lseek(4, 0, SEEK_CUR)   = 0 <0.000025>
+23:18:31.962391 fstat(4, {st_mode=S_IFREG|0664, st_size=13877, ...}) = 0 <0.000016>
+23:18:31.962456 read(4, "B\r\r\n\0\0\0\0006\370Nco*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0006\0\0"..., 13878) = 13877 <0.000025>
+23:18:31.962526 read(4, "", 1)          = 0 <0.000017>
+23:18:31.962589 close(4)                = 0 <0.000178>
+23:18:31.962951 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f225da000 <0.000056>
+23:18:31.963680 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000085>
+23:18:31.964080 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/keyword.py", {st_mode=S_IFREG|0775, st_size=2245, ...}) = 0 <0.000194>
+23:18:31.964612 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/keyword.py", {st_mode=S_IFREG|0775, st_size=2245, ...}) = 0 <0.000065>
+23:18:31.964789 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/keyword.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000261>
+23:18:31.965359 fstat(4, {st_mode=S_IFREG|0664, st_size=1786, ...}) = 0 <0.000055>
+23:18:31.965510 lseek(4, 0, SEEK_CUR)   = 0 <0.000018>
+23:18:31.965797 fstat(4, {st_mode=S_IFREG|0664, st_size=1786, ...}) = 0 <0.000021>
+23:18:31.965878 read(4, "B\r\r\n\0\0\0\0006\370Nc\305\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0"..., 1787) = 1786 <0.000021>
+23:18:31.965954 read(4, "", 1)          = 0 <0.000019>
+23:18:31.966028 close(4)                = 0 <0.000154>
+23:18:31.966791 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000053>
+23:18:31.966997 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/heapq.py", {st_mode=S_IFREG|0664, st_size=23017, ...}) = 0 <0.000228>
+23:18:31.967521 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/heapq.py", {st_mode=S_IFREG|0664, st_size=23017, ...}) = 0 <0.000023>
+23:18:31.967797 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/heapq.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000233>
+23:18:31.968191 fstat(4, {st_mode=S_IFREG|0664, st_size=14339, ...}) = 0 <0.000016>
+23:18:31.968264 lseek(4, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:31.968315 fstat(4, {st_mode=S_IFREG|0664, st_size=14339, ...}) = 0 <0.000017>
+23:18:31.968377 read(4, "B\r\r\n\0\0\0\0006\370Nc\351Y\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 14340) = 14339 <0.000023>
+23:18:31.968445 read(4, "", 1)          = 0 <0.000015>
+23:18:31.968517 close(4)                = 0 <0.000174>
+23:18:31.969018 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000054>
+23:18:31.969354 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000042>
+23:18:31.969495 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=70520, ...}) = 0 <0.000296>
+23:18:31.970231 futex(0x7f6f230970c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000039>
+23:18:31.970341 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 4 <0.000233>
+23:18:31.970699 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000020>
+23:18:31.970767 fstat(4, {st_mode=S_IFREG|0775, st_size=70520, ...}) = 0 <0.000011>
+23:18:31.971121 mmap(NULL, 27960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6f225d3000 <0.000089>
+23:18:31.971514 mmap(0x7f6f225d4000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1000) = 0x7f6f225d4000 <0.000022>
+23:18:31.971564 mmap(0x7f6f225d6000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7f6f225d6000 <0.000014>
+23:18:31.971605 mmap(0x7f6f225d7000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3000) = 0x7f6f225d7000 <0.000013>
+23:18:31.971660 close(4)                = 0 <0.000010>
+23:18:31.971723 mprotect(0x7f6f225d7000, 4096, PROT_READ) = 0 <0.000014>
+23:18:31.972219 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000048>
+23:18:31.972462 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/reprlib.py", {st_mode=S_IFREG|0664, st_size=5267, ...}) = 0 <0.000142>
+23:18:31.973208 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/reprlib.py", {st_mode=S_IFREG|0664, st_size=5267, ...}) = 0 <0.000023>
+23:18:31.973294 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/reprlib.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000221>
+23:18:31.973688 fstat(4, {st_mode=S_IFREG|0664, st_size=5327, ...}) = 0 <0.000030>
+23:18:31.973779 lseek(4, 0, SEEK_CUR)   = 0 <0.000013>
+23:18:31.974050 fstat(4, {st_mode=S_IFREG|0664, st_size=5327, ...}) = 0 <0.000012>
+23:18:31.974096 read(4, "B\r\r\n\0\0\0\0006\370Nc\223\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 5328) = 5327 <0.000015>
+23:18:31.974146 read(4, "", 1)          = 0 <0.000010>
+23:18:31.974189 close(4)                = 0 <0.000151>
+23:18:31.974985 brk(0x219e000)          = 0x219e000 <0.000053>
+23:18:31.975437 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000020>
+23:18:31.975719 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/functools.py", {st_mode=S_IFREG|0664, st_size=32932, ...}) = 0 <0.000163>
+23:18:31.976122 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/functools.py", {st_mode=S_IFREG|0664, st_size=32932, ...}) = 0 <0.000039>
+23:18:31.976239 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/functools.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 4 <0.000323>
+23:18:31.976962 fstat(4, {st_mode=S_IFREG|0664, st_size=24208, ...}) = 0 <0.000012>
+23:18:31.977020 lseek(4, 0, SEEK_CUR)   = 0 <0.000011>
+23:18:31.977061 fstat(4, {st_mode=S_IFREG|0664, st_size=24208, ...}) = 0 <0.000010>
+23:18:31.977108 read(4, "B\r\r\n\0\0\0\0006\370Nc\244\200\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 24209) = 24208 <0.000035>
+23:18:31.977176 read(4, "", 1)          = 0 <0.000012>
+23:18:31.977438 close(4)                = 0 <0.000228>
+23:18:31.978632 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000062>
+23:18:31.979056 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000205>
+23:18:31.979391 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.abi3.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000027>
+23:18:31.979474 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000017>
+23:18:31.979809 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.py", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000023>
+23:18:31.979880 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.pyc", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000017>
+23:18:31.979936 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google", {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000015>
+23:18:31.980043 read(3, "", 8192)       = 0 <0.000032>
+23:18:31.980325 close(3)                = 0 <0.000185>
+23:18:31.980702 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/matplotlib-3.3.1-py3.7-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3 <0.000279>
+23:18:31.981178 fstat(3, {st_mode=S_IFREG|0664, st_size=569, ...}) = 0 <0.000016>
+23:18:31.981246 ioctl(3, TCGETS, 0x7ffefa042780) = -1 ENOTTY (Inappropriate ioctl for device) <0.000015>
+23:18:31.981313 lseek(3, 0, SEEK_CUR)   = 0 <0.000013>
+23:18:31.981365 ioctl(3, TCGETS, 0x7ffefa042720) = -1 ENOTTY (Inappropriate ioctl for device) <0.000014>
+23:18:31.981451 read(3, "import sys, types, os;has_mfs = "..., 8192) = 569 <0.000017>
+23:18:31.982066 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000060>
+23:18:31.982351 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000333>
+23:18:31.983129 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits/__init__.abi3.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000056>
+23:18:31.983334 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits/__init__.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000052>
+23:18:31.983503 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits/__init__.py", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000019>
+23:18:31.983789 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits/__init__.pyc", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000019>
+23:18:31.983857 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/mpl_toolkits", {st_mode=S_IFDIR|S_ISGID|0770, st_size=7, ...}) = 0 <0.000020>
+23:18:31.983988 read(3, "", 8192)       = 0 <0.000014>
+23:18:31.984233 close(3)                = 0 <0.000143>
+23:18:31.984664 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/protobuf-3.13.0-py3.7-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3 <0.000253>
+23:18:31.985112 fstat(3, {st_mode=S_IFREG|0664, st_size=539, ...}) = 0 <0.000015>
+23:18:31.985176 ioctl(3, TCGETS, 0x7ffefa042780) = -1 ENOTTY (Inappropriate ioctl for device) <0.000013>
+23:18:31.985239 lseek(3, 0, SEEK_CUR)   = 0 <0.000013>
+23:18:31.985289 ioctl(3, TCGETS, 0x7ffefa042720) = -1 ENOTTY (Inappropriate ioctl for device) <0.000013>
+23:18:31.985368 read(3, "import sys, types, os;has_mfs = "..., 8192) = 539 <0.000015>
+23:18:31.985625 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000052>
+23:18:31.985826 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.cpython-37m-x86_64-linux-gnu.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000019>
+23:18:31.986103 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.abi3.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000040>
+23:18:31.986229 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.so", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000055>
+23:18:31.986767 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.py", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000020>
+23:18:31.987079 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google/__init__.pyc", 0x7ffefa0417b0) = -1 ENOENT (No such file or directory) <0.000024>
+23:18:31.987152 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages/google", {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000020>
+23:18:31.987287 read(3, "", 8192)       = 0 <0.000038>
+23:18:31.987587 close(3)                = 0 <0.000264>
+23:18:31.988041 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000048>
+23:18:31.988311 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000033>
+23:18:31.988421 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000021>
+23:18:31.988750 stat("/home/grzenda/weighted-retraining", {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000017>
+23:18:31.988819 stat("/home/grzenda/weighted-retraining", {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000016>
+23:18:31.988898 stat("/home/grzenda/weighted-retraining", {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000017>
+23:18:31.988965 openat(AT_FDCWD, "/home/grzenda/weighted-retraining", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000157>
+23:18:31.989288 fstat(3, {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000024>
+23:18:31.989376 getdents64(3, /* 24 entries */, 32768) = 768 <0.000426>
+23:18:31.989860 getdents64(3, /* 0 entries */, 32768) = 0 <0.000014>
+23:18:31.989917 close(3)                = 0 <0.000015>
+23:18:31.990054 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000045>
+23:18:31.990374 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000049>
+23:18:31.990924 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0770, st_size=271, ...}) = 0 <0.000019>
+23:18:31.991147 stat("/home/grzenda/weighted-retraining", {st_mode=S_IFDIR|0770, st_size=24, ...}) = 0 <0.000019>
+23:18:31.991279 stat("./scripts/opt/adaptive_experiments.py", {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000048>
+23:18:31.991597 openat(AT_FDCWD, "./scripts/opt/adaptive_experiments.py", O_RDONLY) = 3 <0.000060>
+23:18:31.991872 ioctl(3, FIOCLEX)       = 0 <0.000013>
+23:18:31.991984 fstat(3, {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000015>
+23:18:31.992242 fstat(3, {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000025>
+23:18:31.992364 lseek(3, 0, SEEK_SET)   = 0 <0.000017>
+23:18:31.992740 read(3, "#!/usr/bin/env python3\n\nimport s"..., 1888) = 1888 <0.000024>
+23:18:31.992861 read(3, "(cmd_str, shell=True)\n", 8192) = 22 <0.000018>
+23:18:31.993123 close(3)                = 0 <0.000070>
+23:18:31.993437 stat("./scripts/opt/adaptive_experiments.py", {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000023>
+23:18:31.993535 readlink("./scripts/opt/adaptive_experiments.py", 0x7ffefa033710, 4096) = -1 EINVAL (Invalid argument) <0.000019>
+23:18:31.993615 getcwd("/home/grzenda/weighted-retraining", 4096) = 34 <0.000016>
+23:18:31.993677 lstat("/home/grzenda/weighted-retraining/scripts", {st_mode=S_IFDIR|0770, st_size=7, ...}) = 0 <0.000021>
+23:18:31.993964 lstat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000020>
+23:18:31.994030 lstat("/home/grzenda/weighted-retraining/scripts/opt/adaptive_experiments.py", {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000021>
+23:18:31.994122 openat(AT_FDCWD, "./scripts/opt/adaptive_experiments.py", O_RDONLY) = 3 <0.000056>
+23:18:31.994457 fcntl(3, F_GETFD)       = 0 <0.000015>
+23:18:31.994513 fcntl(3, F_SETFD, FD_CLOEXEC) = 0 <0.000015>
+23:18:31.994573 fstat(3, {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000015>
+23:18:31.994636 ioctl(3, TCGETS, 0x7ffefa044a70) = -1 ENOTTY (Inappropriate ioctl for device) <0.000015>
+23:18:31.994707 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:31.994763 fstat(3, {st_mode=S_IFREG|0770, st_size=1910, ...}) = 0 <0.000017>
+23:18:31.995080 read(3, "#!/usr/bin/env python3\n\nimport s"..., 8192) = 1910 <0.000017>
+23:18:31.995142 lseek(3, 0, SEEK_SET)   = 0 <0.000015>
+23:18:31.995220 read(3, "#!/usr/bin/env python3\n\nimport s"..., 8192) = 1910 <0.000017>
+23:18:31.995384 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f22593000 <0.000046>
+23:18:31.995716 read(3, "", 8192)       = 0 <0.000037>
+23:18:31.996139 close(3)                = 0 <0.000045>
+23:18:31.996563 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000063>
+23:18:31.996801 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000035>
+23:18:31.996926 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000021>
+23:18:31.997192 openat(AT_FDCWD, "/home/grzenda/weighted-retraining/scripts/opt", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000189>
+23:18:31.997689 fstat(3, {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000080>
+23:18:31.998014 getdents64(3, /* 6 entries */, 32768) = 216 <0.000019>
+23:18:31.998086 getdents64(3, /* 0 entries */, 32768) = 0 <0.000015>
+23:18:31.998142 close(3)                = 0 <0.000018>
+23:18:31.998244 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000025>
+23:18:31.998523 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/subprocess.py", {st_mode=S_IFREG|0664, st_size=71729, ...}) = 0 <0.000194>
+23:18:31.998955 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/subprocess.py", {st_mode=S_IFREG|0664, st_size=71729, ...}) = 0 <0.000059>
+23:18:31.999125 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/subprocess.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000305>
+23:18:31.999742 fstat(3, {st_mode=S_IFREG|0664, st_size=39191, ...}) = 0 <0.000034>
+23:18:31.999835 lseek(3, 0, SEEK_CUR)   = 0 <0.000016>
+23:18:31.999894 fstat(3, {st_mode=S_IFREG|0664, st_size=39191, ...}) = 0 <0.000016>
+23:18:31.999972 read(3, "B\r\r\n\0\0\0\0006\370Nc1\30\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\25\0\0"..., 39192) = 39191 <0.000041>
+23:18:32.000306 read(3, "", 1)          = 0 <0.000015>
+23:18:32.000368 close(3)                = 0 <0.000204>
+23:18:32.001084 openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3 <0.000058>
+23:18:32.001221 fstat(3, {st_mode=S_IFREG|0644, st_size=3592, ...}) = 0 <0.000016>
+23:18:32.001290 fstat(3, {st_mode=S_IFREG|0644, st_size=3592, ...}) = 0 <0.000015>
+23:18:32.001354 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\10\0\0\0\0"..., 4096) = 3592 <0.000018>
+23:18:32.001419 lseek(3, -2280, SEEK_CUR) = 1312 <0.000015>
+23:18:32.001476 read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\10\0\0\0\0"..., 4096) = 2280 <0.000016>
+23:18:32.001543 close(3)                = 0 <0.000019>
+23:18:32.002019 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000024>
+23:18:32.002405 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000026>
+23:18:32.002504 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/signal.py", {st_mode=S_IFREG|0664, st_size=2123, ...}) = 0 <0.000146>
+23:18:32.002901 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/signal.py", {st_mode=S_IFREG|0664, st_size=2123, ...}) = 0 <0.000022>
+23:18:32.003282 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/signal.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000321>
+23:18:32.003748 fstat(3, {st_mode=S_IFREG|0664, st_size=2489, ...}) = 0 <0.000017>
+23:18:32.003820 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.003876 fstat(3, {st_mode=S_IFREG|0664, st_size=2489, ...}) = 0 <0.000015>
+23:18:32.003936 read(3, "B\r\r\n\0\0\0\0006\370NcK\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 2490) = 2489 <0.000017>
+23:18:32.004000 read(3, "", 1)          = 0 <0.000016>
+23:18:32.004060 close(3)                = 0 <0.000162>
+23:18:32.004602 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000049>
+23:18:32.004887 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000026>
+23:18:32.004988 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/enum.py", {st_mode=S_IFREG|0664, st_size=35043, ...}) = 0 <0.000214>
+23:18:32.005619 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/enum.py", {st_mode=S_IFREG|0664, st_size=35043, ...}) = 0 <0.000043>
+23:18:32.005737 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/enum.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000209>
+23:18:32.006109 fstat(3, {st_mode=S_IFREG|0664, st_size=24356, ...}) = 0 <0.000029>
+23:18:32.006196 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.006252 fstat(3, {st_mode=S_IFREG|0664, st_size=24356, ...}) = 0 <0.000016>
+23:18:32.006313 read(3, "B\r\r\n\0\0\0\0006\370Nc\343\210\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 24357) = 24356 <0.000023>
+23:18:32.006380 read(3, "", 1)          = 0 <0.000017>
+23:18:32.006757 close(3)                = 0 <0.000145>
+23:18:32.008953 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000069>
+23:18:32.009494 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000052>
+23:18:32.009648 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000055>
+23:18:32.009973 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=64088, ...}) = 0 <0.000206>
+23:18:32.010965 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3 <0.000516>
+23:18:32.011586 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000044>
+23:18:32.011710 fstat(3, {st_mode=S_IFREG|0775, st_size=64088, ...}) = 0 <0.000039>
+23:18:32.011945 mmap(NULL, 25752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f2258c000 <0.000023>
+23:18:32.012010 mmap(0x7f6f2258e000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6f2258e000 <0.000024>
+23:18:32.012077 mmap(0x7f6f22590000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6f22590000 <0.000020>
+23:18:32.012137 mmap(0x7f6f22591000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6f22591000 <0.000019>
+23:18:32.012211 close(3)                = 0 <0.000016>
+23:18:32.012497 mprotect(0x7f6f22591000, 4096, PROT_READ) = 0 <0.000037>
+23:18:32.012704 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000047>
+23:18:32.012957 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000040>
+23:18:32.013084 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000042>
+23:18:32.013281 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=102720, ...}) = 0 <0.000161>
+23:18:32.013647 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3 <0.000279>
+23:18:32.013976 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000015>
+23:18:32.014034 fstat(3, {st_mode=S_IFREG|0775, st_size=102720, ...}) = 0 <0.000014>
+23:18:32.014091 mmap(NULL, 34016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f22583000 <0.000018>
+23:18:32.014147 mmap(0x7f6f22585000, 12288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6f22585000 <0.000023>
+23:18:32.014206 mmap(0x7f6f22588000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f6f22588000 <0.000018>
+23:18:32.014432 mmap(0x7f6f22589000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f6f22589000 <0.000018>
+23:18:32.014501 close(3)                = 0 <0.000013>
+23:18:32.014587 mprotect(0x7f6f22589000, 4096, PROT_READ) = 0 <0.000017>
+23:18:32.014760 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000047>
+23:18:32.014964 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000037>
+23:18:32.015089 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/selectors.py", {st_mode=S_IFREG|0664, st_size=18561, ...}) = 0 <0.000175>
+23:18:32.015844 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/selectors.py", {st_mode=S_IFREG|0664, st_size=18561, ...}) = 0 <0.000021>
+23:18:32.016193 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/selectors.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000176>
+23:18:32.016507 fstat(3, {st_mode=S_IFREG|0664, st_size=16925, ...}) = 0 <0.000030>
+23:18:32.016589 lseek(3, 0, SEEK_CUR)   = 0 <0.000013>
+23:18:32.016640 fstat(3, {st_mode=S_IFREG|0664, st_size=16925, ...}) = 0 <0.000014>
+23:18:32.016700 read(3, "B\r\r\n\0\0\0\0006\370Nc\201H\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0"..., 16926) = 16925 <0.000030>
+23:18:32.016952 read(3, "", 1)          = 0 <0.000014>
+23:18:32.017006 close(3)                = 0 <0.000150>
+23:18:32.017567 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections", {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000051>
+23:18:32.017808 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections", {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000035>
+23:18:32.017932 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections", {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000104>
+23:18:32.018505 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000184>
+23:18:32.019024 fstat(3, {st_mode=S_IFDIR|S_ISGID|0770, st_size=5, ...}) = 0 <0.000028>
+23:18:32.019100 brk(0x21c3000)          = 0x21c3000 <0.000016>
+23:18:32.019160 getdents64(3, /* 5 entries */, 32768) = 144 <0.000016>
+23:18:32.019220 getdents64(3, /* 0 entries */, 32768) = 0 <0.000014>
+23:18:32.019286 brk(0x21bb000)          = 0x21bb000 <0.000021>
+23:18:32.019595 close(3)                = 0 <0.000014>
+23:18:32.019671 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/abc.py", {st_mode=S_IFREG|0664, st_size=68, ...}) = 0 <0.000165>
+23:18:32.020080 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/abc.py", {st_mode=S_IFREG|0664, st_size=68, ...}) = 0 <0.000027>
+23:18:32.020168 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/collections/__pycache__/abc.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000233>
+23:18:32.020527 fstat(3, {st_mode=S_IFREG|0664, st_size=182, ...}) = 0 <0.000029>
+23:18:32.020634 lseek(3, 0, SEEK_CUR)   = 0 <0.000027>
+23:18:32.020876 fstat(3, {st_mode=S_IFREG|0664, st_size=182, ...}) = 0 <0.000030>
+23:18:32.020974 read(3, "B\r\r\n\0\0\0\0007\370NcD\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0"..., 183) = 182 <0.000088>
+23:18:32.021525 read(3, "", 1)          = 0 <0.000033>
+23:18:32.021753 close(3)                = 0 <0.000152>
+23:18:32.022125 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000049>
+23:18:32.022381 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000041>
+23:18:32.022637 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload", {st_mode=S_IFDIR|S_ISGID|0770, st_size=70, ...}) = 0 <0.000027>
+23:18:32.022727 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=162800, ...}) = 0 <0.000167>
+23:18:32.023412 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3 <0.000234>
+23:18:32.023782 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+23:18:32.023849 fstat(3, {st_mode=S_IFREG|0775, st_size=162800, ...}) = 0 <0.000016>
+23:18:32.023910 mmap(NULL, 52432, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6f22576000 <0.000022>
+23:18:32.024126 mmap(0x7f6f22579000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6f22579000 <0.000024>
+23:18:32.024195 mmap(0x7f6f2257e000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f6f2257e000 <0.000020>
+23:18:32.024254 mmap(0x7f6f22580000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f6f22580000 <0.000018>
+23:18:32.024503 close(3)                = 0 <0.000015>
+23:18:32.024623 mprotect(0x7f6f22580000, 4096, PROT_READ) = 0 <0.000020>
+23:18:32.025192 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000062>
+23:18:32.025544 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000045>
+23:18:32.025674 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/threading.py", {st_mode=S_IFREG|0664, st_size=49284, ...}) = 0 <0.000136>
+23:18:32.026105 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/threading.py", {st_mode=S_IFREG|0664, st_size=49284, ...}) = 0 <0.000023>
+23:18:32.026388 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/threading.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000210>
+23:18:32.026872 fstat(3, {st_mode=S_IFREG|0664, st_size=37910, ...}) = 0 <0.000040>
+23:18:32.027034 lseek(3, 0, SEEK_CUR)   = 0 <0.000038>
+23:18:32.027170 fstat(3, {st_mode=S_IFREG|0664, st_size=37910, ...}) = 0 <0.000037>
+23:18:32.027300 read(3, "B\r\r\n\0\0\0\0006\370Nc\204\300\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\25\0\0"..., 37911) = 37910 <0.000043>
+23:18:32.027530 read(3, "", 1)          = 0 <0.000016>
+23:18:32.027599 close(3)                = 0 <0.000128>
+23:18:32.028166 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f22536000 <0.000048>
+23:18:32.028495 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000053>
+23:18:32.028713 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000039>
+23:18:32.028834 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/traceback.py", {st_mode=S_IFREG|0664, st_size=23437, ...}) = 0 <0.000179>
+23:18:32.029355 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/traceback.py", {st_mode=S_IFREG|0664, st_size=23437, ...}) = 0 <0.000023>
+23:18:32.029660 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/traceback.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000218>
+23:18:32.029978 fstat(3, {st_mode=S_IFREG|0664, st_size=19599, ...}) = 0 <0.000019>
+23:18:32.030057 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.030121 fstat(3, {st_mode=S_IFREG|0664, st_size=19599, ...}) = 0 <0.000016>
+23:18:32.030184 read(3, "B\r\r\n\0\0\0\0006\370Nc\215[\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\23\0\0"..., 19600) = 19599 <0.000024>
+23:18:32.030463 read(3, "", 1)          = 0 <0.000015>
+23:18:32.030523 close(3)                = 0 <0.000171>
+23:18:32.030998 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000054>
+23:18:32.031190 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000039>
+23:18:32.031310 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/linecache.py", {st_mode=S_IFREG|0664, st_size=5330, ...}) = 0 <0.000153>
+23:18:32.031808 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/linecache.py", {st_mode=S_IFREG|0664, st_size=5330, ...}) = 0 <0.000022>
+23:18:32.032045 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/linecache.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000219>
+23:18:32.032419 fstat(3, {st_mode=S_IFREG|0664, st_size=3794, ...}) = 0 <0.000020>
+23:18:32.032516 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.032577 fstat(3, {st_mode=S_IFREG|0664, st_size=3794, ...}) = 0 <0.000016>
+23:18:32.032642 read(3, "B\r\r\n\0\0\0\0006\370Nc\322\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 3795) = 3794 <0.000018>
+23:18:32.032704 read(3, "", 1)          = 0 <0.000017>
+23:18:32.032937 close(3)                = 0 <0.000137>
+23:18:32.033426 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000048>
+23:18:32.033721 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000050>
+23:18:32.033986 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/tokenize.py", {st_mode=S_IFREG|0664, st_size=27031, ...}) = 0 <0.000134>
+23:18:32.034327 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/tokenize.py", {st_mode=S_IFREG|0664, st_size=27031, ...}) = 0 <0.000047>
+23:18:32.034447 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/tokenize.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000237>
+23:18:32.035016 fstat(3, {st_mode=S_IFREG|0664, st_size=17808, ...}) = 0 <0.000026>
+23:18:32.035113 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.035361 fstat(3, {st_mode=S_IFREG|0664, st_size=17808, ...}) = 0 <0.000030>
+23:18:32.035438 read(3, "B\r\r\n\0\0\0\0006\370Nc\227i\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0/\0\0"..., 17809) = 17808 <0.000022>
+23:18:32.035676 read(3, "", 1)          = 0 <0.000016>
+23:18:32.035737 close(3)                = 0 <0.000190>
+23:18:32.036364 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000083>
+23:18:32.036560 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000024>
+23:18:32.036663 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/re.py", {st_mode=S_IFREG|0664, st_size=15306, ...}) = 0 <0.000205>
+23:18:32.037314 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/re.py", {st_mode=S_IFREG|0664, st_size=15306, ...}) = 0 <0.000045>
+23:18:32.037454 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/re.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000335>
+23:18:32.038131 fstat(3, {st_mode=S_IFREG|0664, st_size=13895, ...}) = 0 <0.000033>
+23:18:32.038388 lseek(3, 0, SEEK_CUR)   = 0 <0.000030>
+23:18:32.038463 fstat(3, {st_mode=S_IFREG|0664, st_size=13895, ...}) = 0 <0.000016>
+23:18:32.038527 read(3, "B\r\r\n\0\0\0\0006\370Nc\312;\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\35\0\0"..., 13896) = 13895 <0.000021>
+23:18:32.038594 read(3, "", 1)          = 0 <0.000015>
+23:18:32.038654 close(3)                = 0 <0.000137>
+23:18:32.039160 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000040>
+23:18:32.039293 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000023>
+23:18:32.039554 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_compile.py", {st_mode=S_IFREG|0664, st_size=26872, ...}) = 0 <0.000155>
+23:18:32.039981 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_compile.py", {st_mode=S_IFREG|0664, st_size=26872, ...}) = 0 <0.000021>
+23:18:32.040253 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/sre_compile.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000228>
+23:18:32.040644 fstat(3, {st_mode=S_IFREG|0664, st_size=15180, ...}) = 0 <0.000016>
+23:18:32.040720 lseek(3, 0, SEEK_CUR)   = 0 <0.000015>
+23:18:32.040777 fstat(3, {st_mode=S_IFREG|0664, st_size=15180, ...}) = 0 <0.000015>
+23:18:32.040841 read(3, "B\r\r\n\0\0\0\0006\370Nc\370h\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 15181) = 15180 <0.000027>
+23:18:32.040912 read(3, "", 1)          = 0 <0.000016>
+23:18:32.041140 close(3)                = 0 <0.000203>
+23:18:32.041878 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000061>
+23:18:32.042063 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000020>
+23:18:32.042297 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_parse.py", {st_mode=S_IFREG|0664, st_size=39156, ...}) = 0 <0.000141>
+23:18:32.042751 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_parse.py", {st_mode=S_IFREG|0664, st_size=39156, ...}) = 0 <0.000023>
+23:18:32.043032 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/sre_parse.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000251>
+23:18:32.043406 fstat(3, {st_mode=S_IFREG|0664, st_size=21263, ...}) = 0 <0.000017>
+23:18:32.043555 lseek(3, 0, SEEK_CUR)   = 0 <0.000016>
+23:18:32.043767 fstat(3, {st_mode=S_IFREG|0664, st_size=21263, ...}) = 0 <0.000016>
+23:18:32.043840 read(3, "B\r\r\n\0\0\0\0006\370Nc\364\230\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0"..., 21264) = 21263 <0.000024>
+23:18:32.043907 read(3, "", 1)          = 0 <0.000017>
+23:18:32.043971 close(3)                = 0 <0.000135>
+23:18:32.044582 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000054>
+23:18:32.044766 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000104>
+23:18:32.045072 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_constants.py", {st_mode=S_IFREG|0664, st_size=7177, ...}) = 0 <0.000164>
+23:18:32.045749 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/sre_constants.py", {st_mode=S_IFREG|0664, st_size=7177, ...}) = 0 <0.000025>
+23:18:32.046089 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/sre_constants.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000274>
+23:18:32.046626 fstat(3, {st_mode=S_IFREG|0664, st_size=6268, ...}) = 0 <0.000019>
+23:18:32.046699 lseek(3, 0, SEEK_CUR)   = 0 <0.000016>
+23:18:32.046761 fstat(3, {st_mode=S_IFREG|0664, st_size=6268, ...}) = 0 <0.000016>
+23:18:32.046826 read(3, "B\r\r\n\0\0\0\0006\370Nc\t\34\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0"..., 6269) = 6268 <0.000019>
+23:18:32.046894 read(3, "", 1)          = 0 <0.000017>
+23:18:32.046959 close(3)                = 0 <0.000253>
+23:18:32.047686 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000018>
+23:18:32.047951 munmap(0x7f6f224f6000, 262144) = 0 <0.000026>
+23:18:32.048021 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000020>
+23:18:32.048088 munmap(0x7f6f224f6000, 262144) = 0 <0.000023>
+23:18:32.048154 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000017>
+23:18:32.048220 munmap(0x7f6f224f6000, 262144) = 0 <0.000021>
+23:18:32.048283 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000019>
+23:18:32.048518 munmap(0x7f6f224f6000, 262144) = 0 <0.000024>
+23:18:32.048584 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000017>
+23:18:32.048647 munmap(0x7f6f224f6000, 262144) = 0 <0.000021>
+23:18:32.048722 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6f224f6000 <0.000017>
+23:18:32.049804 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000066>
+23:18:32.050467 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000056>
+23:18:32.050710 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/copyreg.py", {st_mode=S_IFREG|0664, st_size=7017, ...}) = 0 <0.000157>
+23:18:32.051169 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/copyreg.py", {st_mode=S_IFREG|0664, st_size=7017, ...}) = 0 <0.000022>
+23:18:32.051439 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/copyreg.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000223>
+23:18:32.051754 fstat(3, {st_mode=S_IFREG|0664, st_size=4221, ...}) = 0 <0.000029>
+23:18:32.051856 lseek(3, 0, SEEK_CUR)   = 0 <0.000032>
+23:18:32.052108 fstat(3, {st_mode=S_IFREG|0664, st_size=4221, ...}) = 0 <0.000031>
+23:18:32.052208 read(3, "B\r\r\n\0\0\0\0006\370Nci\33\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0"..., 4222) = 4221 <0.000030>
+23:18:32.052439 read(3, "", 1)          = 0 <0.000021>
+23:18:32.052512 close(3)                = 0 <0.000166>
+23:18:32.052996 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000052>
+23:18:32.053196 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000019>
+23:18:32.053438 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/token.py", {st_mode=S_IFREG|0664, st_size=3763, ...}) = 0 <0.000191>
+23:18:32.053779 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/token.py", {st_mode=S_IFREG|0664, st_size=3763, ...}) = 0 <0.000041>
+23:18:32.053888 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/token.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000197>
+23:18:32.054273 fstat(3, {st_mode=S_IFREG|0664, st_size=3576, ...}) = 0 <0.000036>
+23:18:32.054383 lseek(3, 0, SEEK_CUR)   = 0 <0.000028>
+23:18:32.054633 fstat(3, {st_mode=S_IFREG|0664, st_size=3576, ...}) = 0 <0.000030>
+23:18:32.054737 read(3, "B\r\r\n\0\0\0\0006\370Nc\263\16\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0"..., 3577) = 3576 <0.000030>
+23:18:32.055001 read(3, "", 1)          = 0 <0.000015>
+23:18:32.055240 close(3)                = 0 <0.000170>
+23:18:32.056115 brk(0x21dc000)          = 0x21dc000 <0.000052>
+23:18:32.056323 brk(0x21da000)          = 0x21da000 <0.000018>
+23:18:32.056920 stat("/home/grzenda/weighted-retraining/scripts/opt", {st_mode=S_IFDIR|0770, st_size=6, ...}) = 0 <0.000061>
+23:18:32.057299 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7", {st_mode=S_IFDIR|S_ISGID|0770, st_size=218, ...}) = 0 <0.000043>
+23:18:32.057416 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_weakrefset.py", {st_mode=S_IFREG|0664, st_size=5679, ...}) = 0 <0.000129>
+23:18:32.057789 stat("/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/_weakrefset.py", {st_mode=S_IFREG|0664, st_size=5679, ...}) = 0 <0.000026>
+23:18:32.057880 openat(AT_FDCWD, "/home/grzenda/.conda/envs/weighted-retraining/lib/python3.7/__pycache__/_weakrefset.cpython-37.pyc", O_RDONLY|O_CLOEXEC) = 3 <0.000218>
+23:18:32.058278 fstat(3, {st_mode=S_IFREG|0664, st_size=7439, ...}) = 0 <0.000035>
+23:18:32.058385 lseek(3, 0, SEEK_CUR)   = 0 <0.000014>
+23:18:32.058629 fstat(3, {st_mode=S_IFREG|0664, st_size=7439, ...}) = 0 <0.000016>
+23:18:32.058694 read(3, "B\r\r\n\0\0\0\0006\370Nc/\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0"..., 7440) = 7439 <0.000022>
+23:18:32.058760 read(3, "", 1)          = 0 <0.000015>
+23:18:32.058824 close(3)                = 0 <0.000133>
+23:18:32.059778 write(1, "k:100, r:10, scheduler:base, see"..., 37) = 37 <0.000059>
+23:18:32.060137 pipe2([3, 4], O_CLOEXEC) = 0 <0.000023>
+23:18:32.060424 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3524797 <0.000232>
+23:18:32.060927 close(4)                = 0 <0.000015>
+23:18:32.061028 read(3, "", 50000)      = 0 <0.000306>
+23:18:32.061603 close(3)                = 0 <0.000020>
+23:18:32.061971 wait4(3524797, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3524797 <302.176230>
+23:23:34.240678 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3524797, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:23:34.247623 write(1, "k:0.1, r:10, scheduler:base, see"..., 37) = 37 <0.000056>
+23:23:34.248063 pipe2([3, 4], O_CLOEXEC) = 0 <0.000044>
+23:23:34.248989 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3531666 <0.000271>
+23:23:34.249483 close(4)                = 0 <0.000069>
+23:23:34.250043 read(3, "", 50000)      = 0 <0.000045>
+23:23:34.250389 close(3)                = 0 <0.000075>
+23:23:34.250745 wait4(3531666, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3531666 <303.640301>
+23:28:37.893063 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3531666, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:28:37.899973 write(1, "k:0.001, r:10, scheduler:base, s"..., 39) = 39 <0.000045>
+23:28:37.900194 pipe2([3, 4], O_CLOEXEC) = 0 <0.000023>
+23:28:37.901176 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3539521 <0.000313>
+23:28:37.901650 close(4)                = 0 <0.000041>
+23:28:37.902036 read(3, "", 50000)      = 0 <0.000242>
+23:28:37.902337 close(3)                = 0 <0.000117>
+23:28:37.902774 wait4(3539521, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3539521 <301.974062>
+23:33:39.879327 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3539521, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:33:39.885938 write(1, "k:100, r:10, scheduler:step, see"..., 37) = 37 <0.000063>
+23:33:39.887058 pipe2([3, 4], O_CLOEXEC) = 0 <0.000117>
+23:33:39.888189 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3546343 <0.000310>
+23:33:39.888760 close(4)                = 0 <0.000055>
+23:33:39.889055 read(3, "", 50000)      = 0 <0.000563>
+23:33:39.889822 close(3)                = 0 <0.000065>
+23:33:39.890250 wait4(3546343, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3546343 <304.979561>
+23:38:44.871991 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3546343, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:38:44.878760 write(1, "k:0.001, r:10, scheduler:onecycl"..., 43) = 43 <0.000059>
+23:38:44.879193 pipe2([3, 4], O_CLOEXEC) = 0 <0.000021>
+23:38:44.880508 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3554356 <0.000325>
+23:38:44.881078 close(4)                = 0 <0.000017>
+23:38:44.881173 read(3, "", 50000)      = 0 <0.000682>
+23:38:44.882386 close(3)                = 0 <0.000039>
+23:38:44.882516 wait4(3554356, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3554356 <288.284481>
+23:43:33.169347 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3554356, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:43:33.176680 write(1, "k:0.001, r:10, scheduler:cyclic,"..., 41) = 41 <0.000072>
+23:43:33.177288 pipe2([3, 4], O_CLOEXEC) = 0 <0.000049>
+23:43:33.178438 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3561797 <0.000221>
+23:43:33.178913 close(4)                = 0 <0.000033>
+23:43:33.179063 read(3, "", 50000)      = 0 <0.000243>
+23:43:33.179611 close(3)                = 0 <0.000039>
+23:43:33.179833 wait4(3561797, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3561797 <285.966772>
+23:48:19.149164 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3561797, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:48:19.159407 write(1, "k:0.1, r:10, scheduler:cawr, see"..., 37) = 37 <0.000056>
+23:48:19.159804 pipe2([3, 4], O_CLOEXEC) = 0 <0.000041>
+23:48:19.160779 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6f22d4b550) = 3568281 <0.000333>
+23:48:19.161295 close(4)                = 0 <0.000037>
+23:48:19.161469 read(3, "", 50000)      = 0 <0.000426>
+23:48:19.162052 close(3)                = 0 <0.000048>
+23:48:19.162416 wait4(3568281, [{WIFEXITED(s) && WEXITSTATUS(s) == 137}], 0, NULL) = 3568281 <303.921089>
+23:53:23.085595 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3568281, si_uid=20684, si_status=137, si_utime=0, si_stime=0} ---
+23:53:23.093366 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, {sa_handler=0x58adf0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6f230ac420}, 8) = 0 <0.000048>
+23:53:23.098175 sigaltstack(NULL, {ss_sp=0x20f6850, ss_flags=0, ss_size=16384}) = 0 <0.000043>
+23:53:23.098810 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}, NULL) = 0 <0.000041>
+23:53:23.100998 exit_group(0)           = ?
+23:53:23.102457 +++ exited with 0 +++

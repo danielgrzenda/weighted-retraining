@@ -8,6 +8,7 @@ import argparse
 from pathlib import Path
 import numpy as np
 import torch
+import math
 import functools
 import pytorch_lightning as pl
 
@@ -131,12 +132,6 @@ def main_loop(args):
     data_dir = result_dir / "data"
     data_dir.mkdir()
 
-    # Load data
-    datamodule = WeightedNumpyDataset(args, utils.DataWeighter(args))
-        
-    # this using the datamodule.weighting_function to set_weights of the training data
-    datamodule.setup("fit")
-
     # Load model
     model = ShapesVAE.load_from_checkpoint(args.pretrained_model_file)
     model.beta = model.hparams.beta_final  # Override any beta annealing
@@ -169,47 +164,80 @@ def main_loop(args):
     
     
     levels_of_k = []
+    step_size = math.floor(num_retrain/5)
+    
+    if args.log_scale:
+        max_k = 8
+        min_k = 0
+    else:
+        max_k = max(args.rank_weight_k, 100)
+        min_k = min(args.rank_weight_k, 0.001)
+        
+    
 
     #weight_noise_schedule = [ "cawr", "cyclic", "onecycle", "step" ]
     if args.scheduler == 'cawr':
         scheduler = CosineAnnealingWarmRestarts(fake_optimizer, 
-                        T_0 = 10,# Number of iterations for the first restart
-                        T_mult = 1, # A factor increases TiTi​ after a restart
-                        eta_min = 0.001) # Minimum learning rate
+                T_0 = 10,# Number of iterations for the first restart
+                T_mult = 1, # A factor increases TiTi​ after a restart
+                eta_min = min_k) # Minimum learning rate
     
     if args.scheduler == 'cyclic':
         scheduler = CyclicLR(fake_optimizer, 
-                        base_lr = 0.001, # Initial learning rate which is the lower boundary in the cycle for each parameter group
-                        max_lr = 100, # Upper learning rate boundaries in the cycle for each parameter group
-                        step_size_up = 5, # Number of training iterations in the increasing half of a cycle
-                        mode = "triangular")
+                base_lr = min_k, # Initial learning rate which is the lower boundary in the cycle for each parameter group
+                max_lr = max_k, # Upper learning rate boundaries in the cycle for each parameter group
+                step_size_up = 5, # Number of training iterations in the increasing half of a cycle
+                mode = "triangular")
     
     if args.scheduler == "onecycle":
         scheduler = OneCycleLR(fake_optimizer, 
-                        max_lr = 100, # Upper learning rate boundaries in the cycle for each parameter group
-                        steps_per_epoch = 1, # The number of steps per epoch to train for.
-                        epochs = num_retrain, # The number of epochs to train for.
-                        anneal_strategy = 'cos') # Specifies the annealing strategy
+                max_lr = max_k, # Upper learning rate boundaries in the cycle for each parameter group
+                steps_per_epoch = 1, # The number of steps per epoch to train for.
+                epochs = num_retrain, # The number of epochs to train for.
+                anneal_strategy = 'cos') # Specifies the annealing strategy
     
     if args.scheduler == "step":
         scheduler = StepLR(fake_optimizer, 
-                       step_size = 5, # Period of learning rate decay
-                       gamma = 0.5) # Multiplicative factor of learning rate decay
+                step_size = step_size, # Period of learning rate decay
+                gamma = 0.5) # Multiplicative factor of learning rate decay
 
-    if args.scheduler == "None":
+    if args.scheduler == "base":
         scheduler = StepLR(fake_optimizer, 
-                    step_size = 5, # Period of learning rate decay
-                    gamma = 0.5) # Mu
+                step_size = step_size, # Period of learning rate decay
+                gamma = 0.5) # Multiplicative factor of learning rate decay
     
     for i in range(num_retrain):
         fake_optimizer.step()
-        levels_of_k.append( round (fake_optimizer.param_groups[0]["lr"],6 ) )
+        levels_of_k.append( round (fake_optimizer.param_groups[0]["lr"],8 ) )
         scheduler.step()
-    
-    if args.scheduler == "None":
-        levels_of_k = [args.rank_weight_k]
+
+    if args.scheduler == "base":
+        levels_of_k = []
+        levels_of_k = [args.rank_weight_k for i in range(num_retrain)]
+    else:
+        if args.log_scale:
+            # FIXME log level of k
+            levels_of_k = [10 ** x for x in list(levels_of_k - np.full_like(levels_of_k, 6))]
+            levels_of_k = [round(x, 8) for x in levels_of_k]
         
     print(levels_of_k)
+    print(args.scheduler)
+    print(args.rank_weight_k)
+    
+    print(args.rank_weight_k)
+    args.rank_weight_k = levels_of_k[0]
+    print(args.rank_weight_k)   
+    # Load data
+    datamodule = WeightedNumpyDataset(args, utils.DataWeighter(args))
+    
+    # print(levels_of_k[0])
+    # # FIXME the first weight gets applied here
+    # datamodule.weighting_function = functools.partial(
+    #     utils.DataWeighter.rank_weights, k_val=levels_of_k[0]
+    # )
+    
+    # this using the datamodule.weighting_function to set_weights of the training data
+    datamodule.setup("fit")
             
     postfix = dict(
         retrain_left=num_retrain, best=-float("inf"), n_train=len(datamodule.data_train)
@@ -280,6 +308,7 @@ def main_loop(args):
             else:
                 raise NotImplementedError(args.lso_strategy)
 
+            print(f"Weighing with {levels_of_k[ret_idx]}")
             # FIXME this is where the reweighting gets done, so we need to take the step here
             datamodule.weighting_function = functools.partial(
                 utils.DataWeighter.rank_weights, k_val=levels_of_k[ret_idx]
