@@ -162,10 +162,9 @@ def main_loop(args):
     fake_model = torch.nn.Linear(2, 1)
     fake_optimizer = torch.optim.SGD(fake_model.parameters(), args.rank_weight_k)
     
-    
+    # FIXME what is going on here?
     levels_of_k = []
     step_size = math.floor(num_retrain/5)
-    
     if args.log_scale:
         max_k = 8
         min_k = 0
