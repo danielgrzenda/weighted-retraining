@@ -8,6 +8,9 @@ if __name__ == "__main__":
     seed_array = [21] #( 1 2 3 4 5 )
     root_dir="logs/opt/chem"
     start_model="assets/pretrained_models/chem.ckpt"
+    train_path="data/chem/zinc/orig_model/tensors_train"
+    val_path="data/chem/zinc/orig_model/tensors_val"
+    vocab_path="data/chem/zinc/orig_model/vocab.txt"
     query_budget=500
     n_retrain_epochs=0.1
     n_init_retrain_epochs=1
@@ -44,5 +47,5 @@ if __name__ == "__main__":
             print(f"k:{k}, r:{r}, scheduler:{sched}, seed:{seed}")
 
             # Run the command
-            cmd_str = f"python3 weighted_retraining/opt_scripts/opt_chem.py --train_path=FIXME --val_path=FIXME --vocab_file=FIXME --batch_size=32 --weight_type={weight_type} --rank_weight_k={k} --seed={seed} {gpu} --query_budget={query_budget} --retraining_frequency={r} --result_root={root_dir}/{weight_type}/{sched}/k_{k}/r_{r}/seed{seed} --pretrained_model_file={start_model} --n_retrain_epochs={n_retrain_epochs} --n_init_retrain_epochs={n_init_retrain_epochs} --opt_bounds={opt_bounds} --lso_strategy={lso_strategy} --scheduler={sched} {log_scale} --adaptive_k=100"
+            cmd_str = f"python3 weighted_retraining/opt_scripts/opt_chem.py --train_path={train_path} --val_path={val_path} --vocab_file={vocab_path} --batch_size=32 --weight_type={weight_type} --rank_weight_k={k} --seed={seed} {gpu} --query_budget={query_budget} --retraining_frequency={r} --result_root={root_dir}/{weight_type}/{sched}/k_{k}/r_{r}/seed{seed} --pretrained_model_file={start_model} --n_retrain_epochs={n_retrain_epochs} --n_init_retrain_epochs={n_init_retrain_epochs} --lso_strategy={lso_strategy} --scheduler={sched} {log_scale} --adaptive_k=100"
             subprocess.call(cmd_str, shell=True)
