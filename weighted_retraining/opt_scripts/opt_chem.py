@@ -424,10 +424,12 @@ def main_loop(args):
 
     ## FIXME end my edits 
 
+    print("loading data")
     # Load data
     datamodule = WeightedJTNNDataset(args, utils.DataWeighter(args))
     datamodule.setup("fit")
 
+    print("Loading model")
     # Load model
     model = JTVAE.load_from_checkpoint(
         args.pretrained_model_file, vocab=datamodule.vocab
