@@ -180,18 +180,19 @@ class WeightedJTNNDataset(pl.LightningDataModule):
         return parent_parser
 
     def setup(self, stage):
-
+        print("setup dataset")
         # Create vocab
+        print("create vocab")
         with open(self.vocab_file) as f:
             self.vocab = Vocab([x.strip() for x in f.readlines()])
-
+        print("read in properties")
         # Read in properties
         if self.property_file is None:
             property_dict = dict()
         else:
             with open(self.property_file, "rb") as f:
                 property_dict = pickle.load(f)
-
+        print("training dataset setup")
         self.train_dataset = WeightedMolTreeFolder(
             self.property,
             property_dict,
@@ -201,7 +202,7 @@ class WeightedJTNNDataset(pl.LightningDataModule):
             self.batch_size,
             num_workers=NUM_WORKERS,
         )
-
+        print("val dataset setup")
         # Val dataset, if given
         if self.val_path is None:
             self.val_dataset = None
