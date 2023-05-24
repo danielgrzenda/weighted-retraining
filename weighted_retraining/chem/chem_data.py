@@ -56,6 +56,7 @@ class WeightedMolTreeFolder(MolTreeFolder):
         super().__init__(*args, **kwargs)
 
         # Store all the underlying data
+        print("loading data")
         self.data = []
         for idx in range(len(self.data_files)):
             data = self._load_data_file(idx)
@@ -68,6 +69,7 @@ class WeightedMolTreeFolder(MolTreeFolder):
             self.prop_func = penalized_logP
         else:
             raise NotImplementedError(self.property)
+        print("set properties")
         self._set_data_properties(property_dict)
 
     def _set_data_properties(self, property_dict):
