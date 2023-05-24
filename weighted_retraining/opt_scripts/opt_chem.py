@@ -1,4 +1,5 @@
 import sys
+import math
 import logging
 import warnings
 import itertools
@@ -23,7 +24,7 @@ from weighted_retraining.chem.chem_model import JTVAE
 from weighted_retraining import utils
 from weighted_retraining.chem.chem_utils import rdkit_quiet
 from weighted_retraining.opt_scripts import base as wr_base
-
+from torch.optim.lr_scheduler import CosineAnnealingWarmRestarts, CyclicLR, OneCycleLR, StepLR
 
 logger = logging.getLogger("chem-opt")
 
