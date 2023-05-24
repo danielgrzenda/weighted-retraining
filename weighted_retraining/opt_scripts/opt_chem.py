@@ -464,12 +464,15 @@ def main_loop(args):
 
             # Decide whether to retrain
             samples_so_far = args.retraining_frequency * ret_idx
+            print(f"Deciding to sample: {samples_so_far}")
 
             # Optionally do retraining
             num_epochs = args.n_retrain_epochs
             if ret_idx == 0 and args.n_init_retrain_epochs is not None:
+                print("first ret")
                 num_epochs = args.n_init_retrain_epochs
             if num_epochs > 0:
+                print("retraining")
                 retrain_dir = result_dir / "retraining"
                 version = f"retrain_{samples_so_far}"
                 retrain_model(
@@ -482,6 +485,7 @@ def main_loop(args):
             pbar.set_postfix(postfix)
 
             # Draw samples for logs!
+            print("draw samples for logs")
             if args.samples_per_model > 0:
                 pbar.set_description("sampling")
                 with trange(
@@ -498,6 +502,7 @@ def main_loop(args):
                 results["sample_versions"].append(ret_idx)
 
             # Do querying!
+            print("querying")
             pbar.set_description("querying")
             num_queries_to_do = min(
                 args.retraining_frequency, args.query_budget - samples_so_far
