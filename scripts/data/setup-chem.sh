@@ -1,6 +1,6 @@
 
 # Copy stored data to correct folder
-chem_dir="data/chem/zinc/orig_model"
+chem_dir="data/chem/zinc/test"
 mkdir -p "$chem_dir"
 cp -r assets/data/chem_orig_model/*.txt "$chem_dir"
 
